@@ -1,7 +1,7 @@
 import { defineConfig, type DefaultTheme } from "vitepress"
 
 export const th = defineConfig({
-  lang: "en-US",
+  lang: "th-TH",
   description: "A Opstella docs",
   themeConfig: {
     nav: nav(),
@@ -23,7 +23,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "Intro",
-      link: "/intro/getting-started",
+      link: "/intro/whatisopstella",
       activeMatch: "^/intro/",
     },
     {
@@ -58,9 +58,10 @@ function sidebar(): DefaultTheme.Sidebar {
           text: "Introduction",
           items: [
             {
-              text: "Getting Started",
-              link: "/getting-started",
+              text: "What is Opstella?",
+              link: "/whatisopstella",
             },
+            { text: "Getting Started", link: "/getting-started" },
             { text: "Architecture", link: "/architecture" },
             { text: "Cluster", link: "/cluster" },
             { text: "Definition", link: "/definition" },
