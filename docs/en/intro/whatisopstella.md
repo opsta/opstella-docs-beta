@@ -4,7 +4,7 @@ outline: deep
 
 # What is Opstella?
 
-![Opstella Architecture!](/images/intro/whatisopstella/ArchitectureFlows-Platform-overview.png){data-zoomable}
+![Opstella Architecture!](/images/intro/whatisopstella/opstella-overview.svg){data-zoomable}
 
 <strong>Opstella is a DevSecOps Platform Engineering Single Portal</strong> that unifies development, security, and operations to create a secure and efficient application onboarding experience for enterprises focusing on fast, reliable, and scalable software delivery. Instead of directly managing everything,<strong> Opstella will manage and automate processes across Kubernetes, DevSecOps, and Observability tools.</strong>
 
