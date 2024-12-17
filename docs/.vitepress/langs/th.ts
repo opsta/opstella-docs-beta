@@ -1,5 +1,7 @@
 import { defineConfig, type DefaultTheme } from "vitepress"
 
+const LANG_PREFIX = "th"
+
 export const th = defineConfig({
   lang: "th-TH",
   description: "A Opstella docs",
@@ -22,37 +24,37 @@ export const th = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: "Intro",
-      link: "/intro/whatisopstella",
-      activeMatch: "^/intro/",
+      text: "Introduction",
+      link: `/${LANG_PREFIX}` + "/intro/whatisopstella",
+      activeMatch: `^/${LANG_PREFIX}/intro/`,
     },
-    {
-      text: "Role and Permissions",
-      link: "/role-and-permissions",
-      activeMatch: "^/role-and-permissions/",
-    },
-    {
-      text: "Deploy Application",
-      link: "/deploy-application/deploy-on-opstella",
-      activeMatch: "^/deploy-application/",
-    },
-    {
-      text: "Usecase",
-      link: "/usecase/argocd-ui",
-      activeMatch: "^/usecase/",
-    },
-    {
-      text: "Troubleshoot",
-      link: "/troubleshoot/check-application-job",
-      activeMatch: "^/troubleshoot/",
-    },
+    // {
+    //   text: "Role and Permissions",
+    //   link: `/${LANG_PREFIX}` + "/role-and-permissions",
+    //   activeMatch: `^/${LANG_PREFIX}/role-and-permissions/`,
+    // },
+    // {
+    //   text: "Deploy Application",
+    //   link: `/${LANG_PREFIX}` + "/deploy-application/deploy-on-opstella",
+    //   activeMatch: `^/${LANG_PREFIX}/deploy-application/`,
+    // },
+    // {
+    //   text: "Usecase",
+    //   link: `/${LANG_PREFIX}` + "/usecase/argocd-ui",
+    //   activeMatch: `^/${LANG_PREFIX}/usecase/`,
+    // },
+    // {
+    //   text: "Troubleshoot",
+    //   link: `/${LANG_PREFIX}` + "/troubleshoot/check-application-job",
+    //   activeMatch: `^/${LANG_PREFIX} /troubleshoot/`,
+    // },
   ]
 }
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/intro/": {
-      base: "/intro",
+    "/th/intro/": {
+      base: `/${LANG_PREFIX}/intro`,
       items: [
         {
           text: "Introduction",
@@ -69,8 +71,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/role-and-permissions/": {
-      base: "/role-and-permissions",
+    "/th/role-and-permissions/": {
+      base: `/${LANG_PREFIX}/role-and-permissions`,
       items: [
         {
           text: "Role and Permissions",
@@ -78,7 +80,7 @@ function sidebar(): DefaultTheme.Sidebar {
             { text: "Permission Inherited", link: "/" },
             {
               text: "Role and Permissions",
-              base: "/role-and-permissions/role",
+              base: `/${LANG_PREFIX}/role-and-permissions/role`,
               collapsed: true,
               link: "/",
               items: [
@@ -121,8 +123,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/deploy-application": {
-      base: "/deploy-application",
+    "/th/deploy-application": {
+      base: `/${LANG_PREFIX}/deploy-application`,
       items: [
         {
           text: "Deploy Application",
@@ -135,7 +137,7 @@ function sidebar(): DefaultTheme.Sidebar {
               text: "Deploy on Gitlab",
               link: "/",
               collapsed: true,
-              base: "/deploy-application/deploy-on-gitlab",
+              base: `/${LANG_PREFIX}/deploy-application/deploy-on-gitlab`,
               items: [
                 {
                   text: "Clone from opstella",
@@ -171,8 +173,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/usecase": {
-      base: "/usecase",
+    "/th/usecase": {
+      base: `/${LANG_PREFIX}/usecase`,
       items: [
         {
           text: "Usecase",
@@ -192,7 +194,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Template",
               link: "/",
-              base: "/usecase/template",
+              base: `/${LANG_PREFIX}/usecase/template`,
               collapsed: true,
               items: [
                 {
@@ -220,7 +222,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Monitor Application",
               link: "/",
-              base: "/usecase/monitor-application",
+              base: `/${LANG_PREFIX}/usecase/monitor-application`,
               collapsed: true,
               items: [
                 {
@@ -253,8 +255,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/troubleshoot": {
-      base: "/troubleshoot",
+    "/th/troubleshoot": {
+      base: `/${LANG_PREFIX}/troubleshoot`,
       items: [
         {
           text: "Troubleshoot",
@@ -270,7 +272,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Pipeline",
               link: "/",
-              base: "/troubleshoot/pipeline",
+              base: `/${LANG_PREFIX}/troubleshoot/pipeline`,
               collapsed: true,
               items: [
                 {
@@ -310,7 +312,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Sync",
               link: "/",
-              base: "/troubleshoot/sync",
+              base: `/${LANG_PREFIX}/troubleshoot/sync`,
               collapsed: true,
               items: [
                 {
@@ -334,7 +336,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Application Case",
               link: "/",
-              base: "/troubleshoot/application-case",
+              base: `/${LANG_PREFIX}/troubleshoot/application-case`,
               collapsed: true,
               items: [
                 {

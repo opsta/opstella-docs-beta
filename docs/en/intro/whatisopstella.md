@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# What is Opstella?
+## What is Opstella?
 
 ![Opstella Architecture!](/images/intro/whatisopstella/ArchitectureFlows-Platform-overview.png){data-zoomable}
 

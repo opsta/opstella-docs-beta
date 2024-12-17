@@ -8,15 +8,16 @@ export default defineConfig({
   description: "A Opstella docs",
   // base: "/opstella-docs/",
   rewrites: {
-    "th/:rest*": ":rest*",
+    // "th/:rest*": ":rest*",
+    "en/:rest*": ":rest*",
   },
   ignoreDeadLinks: true,
   head: [["link", { rel: "icon", href: "/images/favicon.svg" }]],
   locales: {
-    root: { label: "Thai", ...th },
-    en: {
-      label: "English",
-      ...en,
+    root: { label: "English", ...en },
+    th: {
+      label: "Thai",
+      ...th,
     },
   },
   // themeConfig: {
