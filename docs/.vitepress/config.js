@@ -1,6 +1,6 @@
-import { defineConfig } from "vitepress"
-import { en } from "./langs/en"
-import { th } from "./langs/th"
+import { defineConfig } from "vitepress";
+import { en } from "./langs/en";
+import { th } from "./langs/th";
 
 // https://vitepress.dev/re ference/site-config
 export default defineConfig({
@@ -357,4 +357,4 @@ export default defineConfig({
   //     },
   //   ],
   // },
-})
+});
