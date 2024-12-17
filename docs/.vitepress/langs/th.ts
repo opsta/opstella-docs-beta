@@ -22,7 +22,6 @@ export const th = defineConfig({
 })
 
 function nav(): DefaultTheme.NavItem[] {
-<<<<<<< HEAD
   return [
     {
       text: "Introduction",
@@ -85,60 +84,6 @@ function sidebar(): DefaultTheme.Sidebar {
               collapsed: true,
               link: "/",
               items: [
-=======
-    return [
-        {
-            text: "Intro",
-            link: "/intro/whatisopstella",
-            activeMatch: "^/intro/",
-        },
-        {
-            text: "Role and Permissions",
-            link: "/role-and-permissions",
-            activeMatch: "^/role-and-permissions/",
-        },
-        {
-            text: "Deploy Application",
-            link: "/deploy-application/deploy-on-opstella",
-            activeMatch: "^/deploy-application/",
-        },
-        {
-            text: "Usecase",
-            link: "/usecase/argocd-ui",
-            activeMatch: "^/usecase/",
-        },
-        {
-            text: "Troubleshoot",
-            link: "/troubleshoot/check-application-job",
-            activeMatch: "^/troubleshoot/",
-        },
-    ]
-}
-
-function sidebar(): DefaultTheme.Sidebar {
-    return {
-        "/intro/": {
-            base: "/intro",
-            items: [
-                {
-                    text: "Introduction",
-                    items: [
-                        {
-                            text: "What is Opstella?",
-                            link: "/whatisopstella",
-                        },
-                        { text: "Getting Started", link: "/getting-started" },
-                        { text: "Architecture", link: "/architecture" },
-                        { text: "Cluster", link: "/cluster" },
-                        { text: "Definition", link: "/definition" },
-                    ],
-                },
-            ],
-        },
-        "/role-and-permissions/": {
-            base: "/role-and-permissions",
-            items: [
->>>>>>> 7ad0bc494f3a3ff6c80045982c61c76ac52d63af
                 {
                     text: "Role and Permissions",
                     items: [
@@ -188,7 +133,6 @@ function sidebar(): DefaultTheme.Sidebar {
                 },
             ],
         },
-<<<<<<< HEAD
       ],
     },
     "/th/deploy-application": {
@@ -207,11 +151,6 @@ function sidebar(): DefaultTheme.Sidebar {
               collapsed: true,
               base: `/${LANG_PREFIX}/deploy-application/deploy-on-gitlab`,
               items: [
-=======
-        "/deploy-application": {
-            base: "/deploy-application",
-            items: [
->>>>>>> 7ad0bc494f3a3ff6c80045982c61c76ac52d63af
                 {
                     text: "Deploy Application",
                     items: [
@@ -259,7 +198,6 @@ function sidebar(): DefaultTheme.Sidebar {
                 },
             ],
         },
-<<<<<<< HEAD
       ],
     },
     "/th/usecase": {
@@ -286,11 +224,6 @@ function sidebar(): DefaultTheme.Sidebar {
               base: `/${LANG_PREFIX}/usecase/template`,
               collapsed: true,
               items: [
-=======
-        "/usecase": {
-            base: "/usecase",
-            items: [
->>>>>>> 7ad0bc494f3a3ff6c80045982c61c76ac52d63af
                 {
                     text: "Usecase",
                     items: [
@@ -368,7 +301,6 @@ function sidebar(): DefaultTheme.Sidebar {
                         },
                     ],
                 },
-<<<<<<< HEAD
                 {
                   text: "Create Template (Platform)",
                   link: "/create-platform-template",
@@ -443,13 +375,6 @@ function sidebar(): DefaultTheme.Sidebar {
               base: `/${LANG_PREFIX}/troubleshoot/pipeline`,
               collapsed: true,
               items: [
-=======
-            ],
-        },
-        "/troubleshoot": {
-            base: "/troubleshoot",
-            items: [
->>>>>>> 7ad0bc494f3a3ff6c80045982c61c76ac52d63af
                 {
                     text: "Troubleshoot",
                     items: [
@@ -543,7 +468,6 @@ function sidebar(): DefaultTheme.Sidebar {
                         },
                     ],
                 },
-<<<<<<< HEAD
                 {
                   text: "Build Issue",
                   link: "/build-issue",
@@ -615,9 +539,6 @@ function sidebar(): DefaultTheme.Sidebar {
               ],
             },
           ],
-=======
-            ],
->>>>>>> 7ad0bc494f3a3ff6c80045982c61c76ac52d63af
         },
     }
 }
