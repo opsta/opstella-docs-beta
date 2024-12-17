@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Read Documentation ->
-      link: /intro/getting-started
+      link: /intro/whatisopstella
 
 features:
   - title: Get Started
@@ -18,14 +18,14 @@ features:
       width: 48
       height: 48
     details: Details of all opstella systems
-    link: /intro/getting-started
-  - title: Cluster
-    icon:
-      src: /images/heroes/kubernetes.svg
-      width: 32
-      height: 32
-    details: Details of the Kubernetes cluster related to the opstella system
-    link: /intro/cluster
+    link: /intro/whatisopstella
+  # - title: Cluster
+  #   icon:
+  #     src: /images/heroes/kubernetes.svg
+  #     width: 32
+  #     height: 32
+  #   details: Details of the Kubernetes cluster related to the opstella system
+  #   link: /intro/cluster
   - title: Role and Permissions
     icon:
       src: /images/heroes/user.svg
@@ -46,5 +46,5 @@ features:
       width: 32
       height: 32
     details: Important use cases
-    link: /usecases
+    link: /usecase/argocd-ui
 ---

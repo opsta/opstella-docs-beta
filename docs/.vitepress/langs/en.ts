@@ -1,7 +1,5 @@
 import { defineConfig, type DefaultTheme } from "vitepress"
 
-const LANG_PREFIX = "en"
-
 export const en = defineConfig({
   lang: "en-US",
   description: "A Opstella docs",
@@ -25,37 +23,37 @@ export const en = defineConfig({
 function nav(): DefaultTheme.NavItem[] {
   return [
     {
-      text: "Intro",
-      link: `/${LANG_PREFIX}` + "/intro/whatisopstella",
-      activeMatch: `^/${LANG_PREFIX}/intro/`,
+      text: "Introduction",
+      link:  "/intro/whatisopstella",
+      activeMatch: `^/intro/`,
     },
-    {
-      text: "Role and Permissions",
-      link: `/${LANG_PREFIX}` + "/role-and-permissions",
-      activeMatch: `^/${LANG_PREFIX}/role-and-permissions/`,
-    },
-    {
-      text: "Deploy Application",
-      link: `/${LANG_PREFIX}` + "/deploy-application/deploy-on-opstella",
-      activeMatch: `^/${LANG_PREFIX}/deploy-application/`,
-    },
-    {
-      text: "Usecase",
-      link: `/${LANG_PREFIX}` + "/usecase/argocd-ui",
-      activeMatch: `^/${LANG_PREFIX}/usecase/`,
-    },
-    {
-      text: "Troubleshoot",
-      link: `/${LANG_PREFIX}` + "/troubleshoot/check-application-job",
-      activeMatch: `^/${LANG_PREFIX} /troubleshoot/`,
-    },
+    // {
+    //   text: "Role and Permissions",
+    //   link:  "/role-and-permissions",
+    //   activeMatch: `^/role-and-permissions/`,
+    // },
+    // {
+    //   text: "Deploy Application",
+    //   link:  "/deploy-application/deploy-on-opstella",
+    //   activeMatch: `^/deploy-application/`,
+    // },
+    // {
+    //   text: "Usecase",
+    //   link:  "/usecase/argocd-ui",
+    //   activeMatch: `^/usecase/`,
+    // },
+    // {
+    //   text: "Troubleshoot",
+    //   link:  "/troubleshoot/check-application-job",
+    //   activeMatch: `^ /troubleshoot/`,
+    // },
   ]
 }
 
 function sidebar(): DefaultTheme.Sidebar {
   return {
-    "/en/intro/": {
-      base: `/${LANG_PREFIX}/intro`,
+    "intro/": {
+      base: `/intro`,
       items: [
         {
           text: "Introduction",
@@ -64,16 +62,17 @@ function sidebar(): DefaultTheme.Sidebar {
               text: "What is Opstella?",
               link: "/whatisopstella",
             },
-            { text: "Getting Started", link: "/getting-started" },
-            { text: "Architecture", link: "/architecture" },
-            { text: "Cluster", link: "/cluster" },
-            { text: "Definition", link: "/definition" },
+            { text: "Opstella Architecture", link: "/opstella-architecture" },
+            // { text: "Getting Started", link: "/getting-started" },
+            // { text: "Architecture", link: "/architecture" },
+            // { text: "Cluster", link: "/cluster" },
+            // { text: "Definition", link: "/definition" },
           ],
         },
       ],
     },
-    "/en/role-and-permissions/": {
-      base: `/${LANG_PREFIX}/role-and-permissions`,
+    "/role-and-permissions/": {
+      base: `/role-and-permissions`,
       items: [
         {
           text: "Role and Permissions",
@@ -81,7 +80,7 @@ function sidebar(): DefaultTheme.Sidebar {
             { text: "Permission Inherited", link: "/" },
             {
               text: "Role and Permissions",
-              base: `/${LANG_PREFIX}/role-and-permissions/role`,
+              base: `/role-and-permissions/role`,
               collapsed: true,
               link: "/",
               items: [
@@ -124,8 +123,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/en/deploy-application": {
-      base: `/${LANG_PREFIX}/deploy-application`,
+    "/deploy-application": {
+      base: `/deploy-application`,
       items: [
         {
           text: "Deploy Application",
@@ -138,7 +137,7 @@ function sidebar(): DefaultTheme.Sidebar {
               text: "Deploy on Gitlab",
               link: "/",
               collapsed: true,
-              base: `/${LANG_PREFIX}/deploy-application/deploy-on-gitlab`,
+              base: `/deploy-application/deploy-on-gitlab`,
               items: [
                 {
                   text: "Clone from opstella",
@@ -174,8 +173,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/en/usecase": {
-      base: `/${LANG_PREFIX}/usecase`,
+    "/usecase": {
+      base: `/usecase`,
       items: [
         {
           text: "Usecase",
@@ -195,7 +194,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Template",
               link: "/",
-              base: `/${LANG_PREFIX}/usecase/template`,
+              base: `/usecase/template`,
               collapsed: true,
               items: [
                 {
@@ -223,7 +222,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Monitor Application",
               link: "/",
-              base: `/${LANG_PREFIX}/usecase/monitor-application`,
+              base: `/usecase/monitor-application`,
               collapsed: true,
               items: [
                 {
@@ -256,8 +255,8 @@ function sidebar(): DefaultTheme.Sidebar {
         },
       ],
     },
-    "/en/troubleshoot": {
-      base: `/${LANG_PREFIX}/troubleshoot`,
+    "/troubleshoot": {
+      base: `/troubleshoot`,
       items: [
         {
           text: "Troubleshoot",
@@ -273,7 +272,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Pipeline",
               link: "/",
-              base: `/${LANG_PREFIX}/troubleshoot/pipeline`,
+              base: `/troubleshoot/pipeline`,
               collapsed: true,
               items: [
                 {
@@ -313,7 +312,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Sync",
               link: "/",
-              base: `/${LANG_PREFIX}/troubleshoot/sync`,
+              base: `/troubleshoot/sync`,
               collapsed: true,
               items: [
                 {
@@ -337,7 +336,7 @@ function sidebar(): DefaultTheme.Sidebar {
             {
               text: "Application Case",
               link: "/",
-              base: `/${LANG_PREFIX}/troubleshoot/application-case`,
+              base: `/troubleshoot/application-case`,
               collapsed: true,
               items: [
                 {

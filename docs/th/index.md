@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: Read Documentation ->
-      link: /intro/getting-started
+      link: /intro/whatisopstella
 
 features:
   - title: Get Started
@@ -18,14 +18,14 @@ features:
       width: 48
       height: 48
     details: รายละเอียดข้อมูลระบบ opstella ทั้งหมด
-    link: /intro/getting-started
-  - title: Cluster
-    icon:
-      src: /images/heroes/kubernetes.svg
-      width: 32
-      height: 32
-    details: รายละเอียดคลัสเตอร์ Kubernetes ที่เกี่ยวข้องกับระบบ opstella
-    link: /intro/cluster
+    link: /intro/whatisopstella
+  # - title: Cluster
+  #   icon:
+  #     src: /images/heroes/kubernetes.svg
+  #     width: 32
+  #     height: 32
+  #   details: รายละเอียดคลัสเตอร์ Kubernetes ที่เกี่ยวข้องกับระบบ opstella
+  #   link: /intro/cluster
   - title: Role and Permissions
     icon:
       src: /images/heroes/user.svg
@@ -46,5 +46,5 @@ features:
       width: 32
       height: 32
     details: Case การใช้งานแบบต่างๆ ที่สำคัญๆ
-    link: /usecases
+    link: /usecase/argocd-ui
 ---
