@@ -77,7 +77,10 @@ function sidebar(): DefaultTheme.Sidebar {
         {
           text: "Role and Permissions",
           items: [
-            { text: "Permission Inherited", link: "/" },
+            { 
+              text: "Permission Inherited", 
+              link: "/" 
+            },
             {
               text: "Role and Permissions",
               base: `/${LANG_PREFIX}/role-and-permissions/role`,
@@ -85,53 +88,61 @@ function sidebar(): DefaultTheme.Sidebar {
               link: "/",
               items: [
                 {
-                    text: "Role and Permissions",
-                    items: [
-                        { text: "Permission Inherited", link: "/" },
+                  text: "Role and Permissions",
+                  items: [
+                    { 
+                      text: "Permission Inherited", 
+                      link: "/" 
+                    },
+                    {
+                      text: "Role and Permissions",
+                      base: "/role-and-permissions/role",
+                      collapsed: true,
+                      link: "/",
+                      items: [
                         {
-                            text: "Role and Permissions",
-                            base: "/role-and-permissions/role",
-                            collapsed: true,
-                            link: "/",
-                            items: [
-                                {
-                                    text: "Admin (Opstella)",
-                                    link: "/admin-company",
-                                },
-                                {
-                                    text: "Admin",
-                                    link: "/admin",
-                                },
-                                {
-                                    text: "Full Control",
-                                    link: "/full-control",
-                                },
-                                {
-                                    text: "Production",
-                                    link: "/production",
-                                },
-                                {
-                                    text: "Non Production",
-                                    link: "/non-production",
-                                },
-                                {
-                                    text: "CI/CD Dev",
-                                    link: "/cicd-dev",
-                                },
-                                {
-                                    text: "CI/CD Dev Infra",
-                                    link: "/cicd-dev-infra",
-                                },
-                            ],
+                          text: "Admin (Opstella)",
+                          link: "/admin-company",
                         },
                         {
-                            text: "Role Recommendations",
-                            link: "/role-commendations",
+                          text: "Admin",
+                          link: "/admin",
                         },
-                        { text: "Create User", link: "/create-user" },
-                    ],
+                        {
+                          text: "Full Control",
+                          link: "/full-control",
+                        },
+                        {
+                          text: "Production",
+                          link: "/production",
+                        },
+                        {
+                          text: "Non Production",
+                          link: "/non-production",
+                        },
+                        {
+                          text: "CI/CD Dev",
+                          link: "/cicd-dev",
+                        },
+                        {
+                          text: "CI/CD Dev Infra",
+                          link: "/cicd-dev-infra",
+                        },
+                      ],
+                    },
+                    {
+                      text: "Role Recommendations",
+                      link: "/role-commendations",
+                    },
+                    {
+                      text: "Create User", 
+                      link: "/create-user" 
+                    },
+                  ],
                 },
-            ],
+              ],
+            },
+          ],
         },
       ],
     },
@@ -152,51 +163,53 @@ function sidebar(): DefaultTheme.Sidebar {
               base: `/${LANG_PREFIX}/deploy-application/deploy-on-gitlab`,
               items: [
                 {
-                    text: "Deploy Application",
-                    items: [
+                  text: "Deploy Application",
+                  items: [
+                    {
+                      text: "Prepare on Opstella",
+                      link: "/deploy-on-opstella",
+                    },
+                    {
+                      text: "Deploy on Gitlab",
+                      link: "/",
+                      collapsed: true,
+                      base: "/deploy-application/deploy-on-gitlab",
+                      items: [
                         {
-                            text: "Prepare on Opstella",
-                            link: "/deploy-on-opstella",
+                          text: "Clone from opstella",
+                          link: "/clone",
                         },
                         {
-                            text: "Deploy on Gitlab",
-                            link: "/",
-                            collapsed: true,
-                            base: "/deploy-application/deploy-on-gitlab",
-                            items: [
-                                {
-                                    text: "Clone from opstella",
-                                    link: "/clone",
-                                },
-                                {
-                                    text: "Push code to Opstella",
-                                    link: "/push-code",
-                                },
-                                {
-                                    text: "Pipeline Workflow",
-                                    link: "/workflow",
-                                },
-                            ],
+                          text: "Push code to Opstella",
+                          link: "/push-code",
                         },
                         {
-                            text: "Using CI",
-                            link: "/using-ci",
+                          text: "Pipeline Workflow",
+                          link: "/workflow",
                         },
-                        {
-                            text: "Check Code Quality",
-                            link: "/check-code-quality",
-                        },
-                        {
-                            text: "Manage Registry",
-                            link: "/manage-registry",
-                        },
-                        {
-                            text: "Using CD",
-                            link: "/using-cd",
-                        },
-                    ],
+                      ],
+                    },
+                    {
+                      text: "Using CI",
+                      link: "/using-ci",
+                    },
+                    {
+                      text: "Check Code Quality",
+                      link: "/check-code-quality",
+                    },
+                    {
+                      text: "Manage Registry",
+                      link: "/manage-registry",
+                    },
+                    {
+                      text: "Using CD",
+                      link: "/using-cd",
+                    },
+                  ],
                 },
-            ],
+              ],
+            },
+          ],
         },
       ],
     },
@@ -379,92 +392,92 @@ function sidebar(): DefaultTheme.Sidebar {
                     text: "Troubleshoot",
                     items: [
                         {
-                            text: "Check Application Job",
-                            link: "/check-application-job",
+                          text: "Check Application Job",
+                          link: "/check-application-job",
                         },
                         {
-                            text: "Opstella Status",
-                            link: "/opstella-status",
+                          text: "Opstella Status",
+                          link: "/opstella-status",
                         },
                         {
-                            text: "Pipeline",
-                            link: "/",
-                            base: "/troubleshoot/pipeline",
-                            collapsed: true,
-                            items: [
-                                {
-                                    text: "Pipeline structure",
-                                    link: "/pipeline-structure",
-                                },
-                                {
-                                    text: "Build Issue",
-                                    link: "/build-issue",
-                                },
-                                {
-                                    text: "Pull Image Proxy",
-                                    link: "/pull-image-proxy",
-                                },
-                                {
-                                    text: "Case Mount Secret",
-                                    link: "/case-mount-secret",
-                                },
-                                {
-                                    text: "Library Deprecated",
-                                    link: "/library-deprecated",
-                                },
-                                {
-                                    text: "Network Lost",
-                                    link: "/network-lost",
-                                },
-                                {
-                                    text: "Sonar Scan Issue",
-                                    link: "/sonar-scan-issue",
-                                },
-                            ],
+                          text: "Pipeline",
+                          link: "/",
+                          base: "/troubleshoot/pipeline",
+                          collapsed: true,
+                          items: [
+                              {
+                                text: "Pipeline structure",
+                                link: "/pipeline-structure",
+                              },
+                              {
+                                text: "Build Issue",
+                                link: "/build-issue",
+                              },
+                              {
+                                text: "Pull Image Proxy",
+                                link: "/pull-image-proxy",
+                              },
+                              {
+                                text: "Case Mount Secret",
+                                link: "/case-mount-secret",
+                              },
+                              {
+                                text: "Library Deprecated",
+                                link: "/library-deprecated",
+                              },
+                              {
+                                text: "Network Lost",
+                                link: "/network-lost",
+                              },
+                              {
+                                text: "Sonar Scan Issue",
+                                link: "/sonar-scan-issue",
+                              },
+                          ],
                         },
                         {
-                            text: "Pod issue",
-                            link: "/pod-issue",
+                          text: "Pod issue",
+                          link: "/pod-issue",
                         },
                         {
-                            text: "Sync",
-                            link: "/",
-                            base: "/troubleshoot/sync",
-                            collapsed: true,
-                            items: [
-                                {
-                                    text: "Sync Platform",
-                                    link: "/sync-platform",
-                                },
-                                {
-                                    text: "Sync Service",
-                                    link: "/sync-service",
-                                },
-                                {
-                                    text: "Sync Component",
-                                    link: "/sync-component",
-                                },
-                                {
-                                    text: "Sync User",
-                                    link: "/sync-User",
-                                },
-                            ],
+                          text: "Sync",
+                          link: "/",
+                          base: "/troubleshoot/sync",
+                          collapsed: true,
+                          items: [
+                            {
+                              text: "Sync Platform",
+                              link: "/sync-platform",
+                            },
+                            {
+                              text: "Sync Service",
+                              link: "/sync-service",
+                            },
+                            {
+                              text: "Sync Component",
+                              link: "/sync-component",
+                            },
+                            {
+                              text: "Sync User",
+                              link: "/sync-User",
+                            },
+                          ],
                         },
                         {
-                            text: "Application Case",
-                            link: "/",
-                            base: "/troubleshoot/application-case",
-                            collapsed: true,
-                            items: [
-                                {
-                                    text: "Application Ingress Incorrect",
-                                    link: "/application-ingress-incorrect",
-                                },
-                                {
-                                    text: "Application Port Incorrect",
-                                    link: "/application-port-incorrect",
-                                },
-                            ],
+                          text: "Application Case",
+                          link: "/",
+                          base: "/troubleshoot/application-case",
+                          collapsed: true,
+                          items: [
+                            {
+                              text: "Application Ingress Incorrect",
+                              link: "/application-ingress-incorrect",
+                            },
+                            {
+                              text: "Application Port Incorrect",
+                              link: "/application-port-incorrect",
+                            },
+                          ],
                         },
                     ],
                 },
@@ -540,5 +553,7 @@ function sidebar(): DefaultTheme.Sidebar {
             },
           ],
         },
+      ],
     }
+  }
 }
