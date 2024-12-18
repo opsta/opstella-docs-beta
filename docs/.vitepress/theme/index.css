@@ -1,3 +1,8 @@
+:root {
+  --vp-home-hero-name-color: #6161FF;
+  --vp-button-brand-bg:  #6161FF;
+}
+
 .medium-zoom-overlay {
   z-index: 999;
 }
@@ -6,6 +11,10 @@
   z-index: 9999;
 }
 
-/* .VPNavBarTitle span { 
+.VPButton {
+  background: linear-gradient(69.41deg, #085DF4 4.84%, #780FFF 97.57%);
+}
+
+.VPNavBarTitle span { 
   display: none; กรณีต้องการซ่อนชื่อเว็บไซต์
-} */
+}
