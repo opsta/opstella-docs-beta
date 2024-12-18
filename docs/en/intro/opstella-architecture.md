@@ -6,7 +6,7 @@ outline: deep
 
 ### <ins><strong>Opstella Components</strong></ins>
 
-![Opstella Architecture!](/images/intro/whatisopstella/opstella-architecture.svg){data-zoomable}
+![Opstella Architecture!](/images/intro/what-is-opstella/opstella-architecture.svg){data-zoomable}
 
 1.   <strong> UI:</strong> A frontend service, users will access through the Opstella portal on this component.
 2.   <strong>Core:</strong> A backend service centralizing information and communication between Opstella’s components.
@@ -56,7 +56,7 @@ Opstella will manage and deploy applications to the integrated Kubernetes worklo
 
 ### <ins><strong>Opstella Application Hierarchy</strong></ins>
 
-![Opstella Architecture!](/images/intro/whatisopstella/application-hierarchy.svg){data-zoomable}
+![Opstella Architecture!](/images/intro/what-is-opstella/application-hierarchy.svg){data-zoomable}
 
 #### Organization 
 

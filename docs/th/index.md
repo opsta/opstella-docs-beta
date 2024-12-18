@@ -4,21 +4,21 @@ layout: home
 
 hero:
   name: "Opstella"
-  text: "Platform Engineer as a Service"
-  tagline: Opstella is a platform engineering product that helps software development in organizations more efficiently with the concept of DevSecOps so that your company has the advantage of automation deployment to production to the market quickly and securely.
+  text: "Simplify DevSecOps Platform Engineering"
+  tagline: Unified single portal for development, security, and operations to create a secure and efficient application onboarding experience for enterprises that focus on fast, reliable, and scalable software delivery. 
   actions:
     - theme: brand
       text: Read Documentation ->
-      link: /intro/whatisopstella
+      link: /intro/what-is-opstella
 
 features:
-  - title: Get Started
+  - title: Opstella คืออะไร
     icon:
       src: /images/heroes/getting-started.png
       width: 48
       height: 48
     details: รายละเอียดข้อมูลระบบ opstella ทั้งหมด
-    link: /intro/whatisopstella
+    link: /intro/what-is-opstella
   # - title: Cluster
   #   icon:
   #     src: /images/heroes/kubernetes.svg

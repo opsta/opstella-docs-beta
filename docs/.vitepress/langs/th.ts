@@ -25,7 +25,7 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     {
       text: "Introduction",
-      link: `/${LANG_PREFIX}` + "/intro/whatisopstella",
+      link: `/${LANG_PREFIX}` + "/intro/what-is-opstella",
       activeMatch: `^/${LANG_PREFIX}/intro/`,
     },
     // {
@@ -61,7 +61,7 @@ function sidebar(): DefaultTheme.Sidebar {
           items: [
             {
               text: "What is Opstella?",
-              link: "/whatisopstella",
+              link: "/what-is-opstella",
             },
             { text: "Getting Started", link: "/getting-started" },
             { text: "Architecture", link: "/architecture" },
