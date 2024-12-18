@@ -469,138 +469,138 @@ Scalable deployments for production environments.
   overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-5zka{background-color:#ffffff;border-color:#0e0e0e;font-weight:bold;position:-webkit-sticky;position:sticky;
-  text-align:center;top:-1px;vertical-align:top;will-change:transform}
 .tg .tg-883g{background-color:#ffffff;border-color:#0e0e0e;text-align:center;vertical-align:top}
 .tg .tg-4pf1{background-color:#ffffff;border-color:#0e0e0e;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-lioa{background-color:#ffffff;border-color:#0e0e0e;text-align:left;vertical-align:top}
 .tg .tg-3ejf{background-color:#D9D9D9;border-color:#0e0e0e;text-align:center;vertical-align:top}
-.tg .tg-zvv0{background-color:#D9D9D9;border-color:#0e0e0e;font-weight:bold;text-align:center;vertical-align:top}
 .tg .tg-4trs{border-color:#0e0e0e;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-84t5{background-color:#ffffff;border-color:#0e0e0e;position:-webkit-sticky;position:sticky;text-align:left;top:-1px;
-  vertical-align:top;will-change:transform}
 .tg .tg-6hj9{background-color:#ffffff;border-color:#0e0e0e;font-weight:bold;text-align:left;vertical-align:top}
 </style>
 <table class="tg"><thead>
   <tr>
-    <th class="tg-84t5"></th>
-    <th class="tg-5zka"><span style="font-style:normal;text-decoration:none;color:#000">Number of Nodes</span></th>
-    <th class="tg-5zka"><span style="font-style:normal;text-decoration:none;color:#000">CPU Cores</span></th>
-    <th class="tg-5zka"><span style="font-style:normal;text-decoration:none;color:#000">Memory (GB)</span></th>
-    <th class="tg-5zka"><span style="font-style:normal;text-decoration:none;color:#000">Disk (GB)</span></th>
+    <th class="tg-6hj9"></th>
+    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Number of Nodes</span></th>
+    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">CPU Cores</span></th>
+    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Memory (GB)</span></th>
+    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Disk (GB)</span></th>
   </tr></thead>
 <tbody>
   <tr>
     <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Virtual Machines</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Bastion Host</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Bastion Host</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">HAProxy</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">4</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">HAProxy</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">NFS Share (DevSecOps)</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">NFS Share (DevSecOps)</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">500</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">NFS Share (Observability)</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">NFS Share (Observability)</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">500</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">NFS Share (DEV)</span></td>
-  </tr>
-  <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">NFS Share (PRD)</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">NFS Share (DEV)</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">100</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">GitLab</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">NFS Share (PRD)</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">100</span></td>
+  </tr>
+  <tr>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">GitLab</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">1</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">8</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-zvv0" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">DevSecOps Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">DevSecOps Cluster</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">8</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Observability Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Observability Cluster</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">8</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">DEV Application Workload Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">DEV Application Workload Cluster</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">8</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">PRD Application Workload Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">PRD Application Workload Cluster</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">3</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">2</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">20</span></td>
   </tr>
   <tr>
-    <td class="tg-6hj9"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
-    <td class="tg-4pf1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">5</span></td>
+    <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Worker Nodes</span></td>
+    <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">5</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">6</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">8</span></td>
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
