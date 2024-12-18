@@ -15,7 +15,7 @@ export const th = defineConfig({
     socialLinks: [
       {
         icon: "facebook",
-        link: "https://m.me/opstella",
+        link: "https://www.facebook.com/opstathailand",
       },
     ],
   },

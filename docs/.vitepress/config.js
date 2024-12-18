@@ -353,7 +353,7 @@ export default defineConfig({
   //   socialLinks: [
   //     {
   //       icon: "facebook",
-  //       link: "https://m.me/opstella",
+  //       link: "https://www.facebook.com/opstathailand",
   //     },
   //   ],
   // },
