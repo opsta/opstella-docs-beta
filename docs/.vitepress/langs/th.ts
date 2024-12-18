@@ -3,22 +3,22 @@ import { defineConfig, type DefaultTheme } from "vitepress"
 const LANG_PREFIX = "th"
 
 export const th = defineConfig({
-    lang: "th-TH",
-    description: "A Opstella docs",
-    themeConfig: {
-        nav: nav(),
+  lang: "th-TH",
+  description: "A Opstella docs",
+  themeConfig: {
+    nav: nav(),
 
-        sidebar: {
-            ...sidebar(),
-        },
-
-        socialLinks: [
-            {
-                icon: "facebook",
-                link: "https://m.me/opstella",
-            },
-        ],
+    sidebar: {
+      ...sidebar(),
     },
+
+    socialLinks: [
+      {
+        icon: "facebook",
+        link: "https://m.me/opstella",
+      },
+    ],
+  },
 })
 
 function nav(): DefaultTheme.NavItem[] {
@@ -77,10 +77,7 @@ function sidebar(): DefaultTheme.Sidebar {
         {
           text: "Role and Permissions",
           items: [
-            { 
-              text: "Permission Inherited", 
-              link: "/" 
-            },
+            { text: "Permission Inherited", link: "/" },
             {
               text: "Role and Permissions",
               base: `/${LANG_PREFIX}/role-and-permissions/role`,
@@ -90,10 +87,7 @@ function sidebar(): DefaultTheme.Sidebar {
                 {
                   text: "Role and Permissions",
                   items: [
-                    { 
-                      text: "Permission Inherited", 
-                      link: "/" 
-                    },
+                    { text: "Permission Inherited", link: "/" },
                     {
                       text: "Role and Permissions",
                       base: "/role-and-permissions/role",
@@ -134,17 +128,14 @@ function sidebar(): DefaultTheme.Sidebar {
                       text: "Role Recommendations",
                       link: "/role-commendations",
                     },
-                    {
-                      text: "Create User", 
-                      link: "/create-user" 
-                    },
+                    { text: "Create User", link: "/create-user" },
                   ],
                 },
               ],
             },
           ],
         },
-      ],
+      ]
     },
     "/th/deploy-application": {
       base: `/${LANG_PREFIX}/deploy-application`,
@@ -238,81 +229,81 @@ function sidebar(): DefaultTheme.Sidebar {
               collapsed: true,
               items: [
                 {
-                    text: "Usecase",
-                    items: [
+                  text: "Usecase",
+                  items: [
+                    {
+                      text: "ArgoCD UI",
+                      link: "/argocd-ui",
+                    },
+                    {
+                      text: "Check Application Status",
+                      link: "/check-application-status",
+                    },
+                    {
+                      text: "Clone Application",
+                      link: "/clone-application",
+                    },
+                    {
+                      text: "Template",
+                      link: "/",
+                      base: "/usecase/template",
+                      collapsed: true,
+                      items: [
                         {
-                            text: "ArgoCD UI",
-                            link: "/argocd-ui",
+                          text: "Create Template (Global)",
+                          link: "/create-global-template",
                         },
                         {
-                            text: "Check Application Status",
-                            link: "/check-application-status",
+                          text: "Create Template (Platform)",
+                          link: "/create-platform-template",
+                        },
+                      ],
+                    },
+                    {
+                      text: "Manage Pipeline",
+                      link: "/manage-pipeline",
+                    },
+                    {
+                      text: "Update Application",
+                      link: "/update-application",
+                    },
+                    {
+                      text: "Using OneChart",
+                      link: "/using-onechart",
+                    },
+                    {
+                      text: "Monitor Application",
+                      link: "/",
+                      base: "/usecase/monitor-application",
+                      collapsed: true,
+                      items: [
+                        {
+                          text: "Log",
+                          link: "/log",
                         },
                         {
-                            text: "Clone Application",
-                            link: "/clone-application",
+                          text: "Metrics",
+                          link: "/metrics",
                         },
                         {
-                            text: "Template",
-                            link: "/",
-                            base: "/usecase/template",
-                            collapsed: true,
-                            items: [
-                                {
-                                    text: "Create Template (Global)",
-                                    link: "/create-global-template",
-                                },
-                                {
-                                    text: "Create Template (Platform)",
-                                    link: "/create-platform-template",
-                                },
-                            ],
+                          text: "Tracing",
+                          link: "/tracing",
                         },
-                        {
-                            text: "Manage Pipeline",
-                            link: "/manage-pipeline",
-                        },
-                        {
-                            text: "Update Application",
-                            link: "/update-application",
-                        },
-                        {
-                            text: "Using OneChart",
-                            link: "/using-onechart",
-                        },
-                        {
-                            text: "Monitor Application",
-                            link: "/",
-                            base: "/usecase/monitor-application",
-                            collapsed: true,
-                            items: [
-                                {
-                                    text: "Log",
-                                    link: "/log",
-                                },
-                                {
-                                    text: "Metrics",
-                                    link: "/metrics",
-                                },
-                                {
-                                    text: "Tracing",
-                                    link: "/tracing",
-                                },
-                            ],
-                        },
-                        {
-                            text: "Opensearch Index",
-                            link: "/opensearch-index",
-                        },
-                        {
-                            text: "Using Open telemetry",
-                            link: "/using-open-telemetry",
-                        },
-                        {
-                            text: "Config Application",
-                            link: "/config-application",
-                        },
-                    ],
+                      ],
+                    },
+                    {
+                      text: "Opensearch Index",
+                      link: "/opensearch-index",
+                    },
+                    {
+                      text: "Using Open telemetry",
+                      link: "/using-open-telemetry",
+                    },
+                    {
+                      text: "Config Application",
+                      link: "/config-application",
+                    },
+                  ],
                 },
                 {
                   text: "Create Template (Platform)",
@@ -389,97 +380,97 @@ function sidebar(): DefaultTheme.Sidebar {
               collapsed: true,
               items: [
                 {
-                    text: "Troubleshoot",
-                    items: [
+                  text: "Troubleshoot",
+                  items: [
+                    {
+                      text: "Check Application Job",
+                      link: "/check-application-job",
+                    },
+                    {
+                      text: "Opstella Status",
+                      link: "/opstella-status",
+                    },
+                    {
+                      text: "Pipeline",
+                      link: "/",
+                      base: "/troubleshoot/pipeline",
+                      collapsed: true,
+                      items: [
                         {
-                          text: "Check Application Job",
-                          link: "/check-application-job",
+                          text: "Pipeline structure",
+                          link: "/pipeline-structure",
                         },
                         {
-                          text: "Opstella Status",
-                          link: "/opstella-status",
+                          text: "Build Issue",
+                          link: "/build-issue",
                         },
                         {
-                          text: "Pipeline",
-                          link: "/",
-                          base: "/troubleshoot/pipeline",
-                          collapsed: true,
-                          items: [
-                              {
-                                text: "Pipeline structure",
-                                link: "/pipeline-structure",
-                              },
-                              {
-                                text: "Build Issue",
-                                link: "/build-issue",
-                              },
-                              {
-                                text: "Pull Image Proxy",
-                                link: "/pull-image-proxy",
-                              },
-                              {
-                                text: "Case Mount Secret",
-                                link: "/case-mount-secret",
-                              },
-                              {
-                                text: "Library Deprecated",
-                                link: "/library-deprecated",
-                              },
-                              {
-                                text: "Network Lost",
-                                link: "/network-lost",
-                              },
-                              {
-                                text: "Sonar Scan Issue",
-                                link: "/sonar-scan-issue",
-                              },
-                          ],
+                          text: "Pull Image Proxy",
+                          link: "/pull-image-proxy",
                         },
                         {
-                          text: "Pod issue",
-                          link: "/pod-issue",
+                          text: "Case Mount Secret",
+                          link: "/case-mount-secret",
                         },
                         {
-                          text: "Sync",
-                          link: "/",
-                          base: "/troubleshoot/sync",
-                          collapsed: true,
-                          items: [
-                            {
-                              text: "Sync Platform",
-                              link: "/sync-platform",
-                            },
-                            {
-                              text: "Sync Service",
-                              link: "/sync-service",
-                            },
-                            {
-                              text: "Sync Component",
-                              link: "/sync-component",
-                            },
-                            {
-                              text: "Sync User",
-                              link: "/sync-User",
-                            },
-                          ],
+                          text: "Library Deprecated",
+                          link: "/library-deprecated",
                         },
                         {
-                          text: "Application Case",
-                          link: "/",
-                          base: "/troubleshoot/application-case",
-                          collapsed: true,
-                          items: [
-                            {
-                              text: "Application Ingress Incorrect",
-                              link: "/application-ingress-incorrect",
-                            },
-                            {
-                              text: "Application Port Incorrect",
-                              link: "/application-port-incorrect",
-                            },
-                          ],
+                          text: "Network Lost",
+                          link: "/network-lost",
                         },
-                    ],
+                        {
+                          text: "Sonar Scan Issue",
+                          link: "/sonar-scan-issue",
+                        },
+                      ],
+                    },
+                    {
+                      text: "Pod issue",
+                      link: "/pod-issue",
+                    },
+                    {
+                      text: "Sync",
+                      link: "/",
+                      base: "/troubleshoot/sync",
+                      collapsed: true,
+                      items: [
+                        {
+                          text: "Sync Platform",
+                          link: "/sync-platform",
+                        },
+                        {
+                          text: "Sync Service",
+                          link: "/sync-service",
+                        },
+                        {
+                          text: "Sync Component",
+                          link: "/sync-component",
+                        },
+                        {
+                          text: "Sync User",
+                          link: "/sync-User",
+                        },
+                      ],
+                    },
+                    {
+                      text: "Application Case",
+                      link: "/",
+                      base: "/troubleshoot/application-case",
+                      collapsed: true,
+                      items: [
+                        {
+                          text: "Application Ingress Incorrect",
+                          link: "/application-ingress-incorrect",
+                        },
+                        {
+                          text: "Application Port Incorrect",
+                          link: "/application-port-incorrect",
+                        },
+                      ],
+                    },
+                  ],
                 },
                 {
                   text: "Build Issue",
@@ -553,7 +544,7 @@ function sidebar(): DefaultTheme.Sidebar {
             },
           ],
         },
-      ],
+      ]
     }
   }
 }
