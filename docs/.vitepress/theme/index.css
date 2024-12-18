@@ -1,6 +1,15 @@
 :root {
-  --vp-home-hero-name-color: #6161FF;
-  --vp-button-brand-bg:  #6161FF;
+  --vp-home-hero-name-color: #6161ff;
+  --vp-button-brand-bg: #6161ff;
+  --vp-c-brand-1: #6161ff;
+}
+
+.dark {
+  --vp-c-bg: #01051b;
+  --vp-c-text-1: #e5e7eb;
+  --vp-c-text-2: #80828d;
+  --vp-sidebar-bg-color: hsl(231, 92.9%, 7.5%);
+  --vp-c-bg-soft: hsl(231, 92.9%, 10.5%);
 }
 
 .medium-zoom-overlay {
@@ -12,9 +21,16 @@
 }
 
 .VPButton {
-  background: linear-gradient(69.41deg, #085DF4 4.84%, #780FFF 97.57%);
+  background: linear-gradient(69.41deg, #085df4 4.84%, #780fff 97.57%);
 }
 
-.VPNavBarTitle span { 
-  display: none; กรณีต้องการซ่อนชื่อเว็บไซต์
+html.dark .light-only {
+  display: none !important;
 }
+
+html:not(.dark) .dark-only {
+  display: none !important;
+}
+/* .VPNavBarTitle span { 
+  display: none; กรณีต้องการซ่อนชื่อเว็บไซต์
+} */
