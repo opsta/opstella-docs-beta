@@ -6,7 +6,7 @@ outline: deep
 
 ### <ins><strong>Opstella Components</strong></ins>
 
-![Opstella Architecture!](/images/intro/whatisopstella/opstella-architecture.png){data-zoomable}
+![Opstella Architecture!](/images/intro/whatisopstella/opstella-architecture.svg){data-zoomable}
 
 1.   <strong> UI:</strong> A frontend service, users will access through the Opstella portal on this component.
 2.   <strong>Core:</strong> A backend service centralizing information and communication between Opstella’s components.
@@ -56,13 +56,13 @@ Opstella will manage and deploy applications to the integrated Kubernetes worklo
 
 ### <ins><strong>Opstella Application Hierarchy</strong></ins>
 
-![Opstella Architecture!](/images/intro/whatisopstella/application-hierarchy.png){data-zoomable}
+![Opstella Architecture!](/images/intro/whatisopstella/application-hierarchy.svg){data-zoomable}
 
-#### 1. Organization 
+#### Organization 
 
 This is the top layer of the application hierarchy. This is usually your company name. The organization is mandatory and can not change when it is first installed and when the Opstella instance is initialized. You can only have one organization.
 
-#### 2. Platform
+#### Platform
 This layer under the organization is responsible for integrating with each DevSecOps tool. This can be defined as
 
 <ul style="list-style-type: square;">
@@ -72,7 +72,8 @@ This layer under the organization is responsible for integrating with each DevSe
             <li>Each of your <strong>projects.</strong> For example, CallCenter, CMS, Support, and Registration.</li>
         </ul>
                 
-#### 3. Service 
+#### Service 
 This is the layer under the platform. This can be defined as your applications, projects, or services. The service will determine the <strong>environments</strong>, such as dev and prd, in which you want to deploy microservices or underlying components.
-#### 4. Component 
+
+#### Component 
 This is the bottom line layer where you deploy the containers. This can be called microservices or batch process. Opstella will create URL endpoints on each environment as defined in the service.
