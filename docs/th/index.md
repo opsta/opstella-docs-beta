@@ -5,10 +5,10 @@ layout: home
 hero:
   name: "Opstella"
   text: "Simplify DevSecOps Platform Engineering"
-  tagline: Unified single portal for development, security, and operations to create a secure and efficient application onboarding experience for enterprises that focus on fast, reliable, and scalable software delivery. 
+  tagline: Unified single portal for development, security, and operations to create a secure and efficient application onboarding experience for enterprises that focus on fast, reliable, and scalable software delivery.
   actions:
     - theme: brand
-      text: Read Documentation ->
+      text: Getting started ->
       link: /intro/what-is-opstella
 
 features:
@@ -36,8 +36,8 @@ features:
   - title: Deploy Application
     icon:
       src: /images/heroes/getting-started.png
-      width: 32
-      height: 32
+      width: 48
+      height: 48
     details: รายละเอียดขั้นตอนเริ่มต้นจนจบการ Deploy Application
     link: /deploy-application/deploy-on-opstella
   - title: Usecases
