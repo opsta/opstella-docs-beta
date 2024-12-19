@@ -4,11 +4,11 @@ outline: deep
 
 ## Opstella Reference Architecture
 
-### <ins><strong>Standalone Architecture</strong></ins>
+### <ins>**Standalone Architecture**</ins>
 
-![Opstella Architecture!](/images/intro/reference-architecture/standalone-architecture.svg){data-zoomable}
+![Opstella Standalone Architecture!](/images/intro/reference-architecture/standalone-architecture.svg){data-zoomable}
 
-#### Use Cases 
+#### Use Cases
 
 1. Prove of concept for a whole Opstella and DevSecOps Platform.
 2. Testing or staging platform environment.
@@ -30,7 +30,7 @@ outline: deep
   <tr>
     <th class="tg-lioa"></th>
     <th class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">Number of Nodes</span></th>
-    <th class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">CPU Cores</span></th>
+    <th class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">CPU (Core)</span></th>
     <th class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">Memory (GB)</span></th>
     <th class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">Disk (GB)</span></th>
   </tr></thead>
@@ -67,7 +67,7 @@ outline: deep
     <td class="tg-883g"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Standalone Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Kubernetes Cluster</span></td>
   </tr>
   <tr>
     <td class="tg-lioa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
@@ -82,6 +82,9 @@ outline: deep
     <td class="tg-883g"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">4</span></td>
     <td class="tg-883g"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">10</span></td>
     <td class="tg-883g"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">40</span></td>
+  </tr>
+  <tr>
+    <td class="tg-3ejf" colspan="5"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Summary</span></td>
   </tr>
   <tr>
     <td class="tg-4pf1"><span style="font-weight:700;font-style:normal;text-decoration:none;color:#000">Total</span></td>
@@ -111,23 +114,22 @@ outline: deep
   </tr></thead>
 <tbody>
   <tr>
-    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1 Kubernetes Clusters Subnet</span></td>
+    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Kubernetes Cluster Subnet</span></td>
     <td class="tg-i81m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">192.168.72.0/24</span></td>
   </tr>
   <tr>
-    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Pod Subnet (per Cluster)</span></td>
+    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Pod Subnet for each Kubernetes cluster</span></td>
     <td class="tg-i81m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">172.16.72.0/22</span></td>
   </tr>
   <tr>
-    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Service Subnet (per Cluster)</span></td>
+    <td class="tg-ycr8"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Service Subnet for each Kubernetes cluster</span></td>
     <td class="tg-i81m"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">172.16.76.0/22</span></td>
   </tr>
 </tbody></table>
 
-
 #### Domain
 
-You must provide domains. For example, we will use <strong>*.devops.example.com</strong> and SSL certificates in this reference architecture. These are domains that will be assigned for DevSecOps tools and Opstella.
+You must provide domains. For example, we will use ***.devops.example.com** and SSL certificates in this reference architecture. These are domains that will be assigned for DevSecOps tools and Opstella.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -232,7 +234,7 @@ You must provide domains. For example, we will use <strong>*.devops.example.com<
 
 #### Ingress
 
-![Opstella Architecture!](/images/intro/reference-architecture/ingress-kubernetes-traffic-flow-standalone.svg){data-zoomable}
+![Opstella Kubernetes Ingress Traffic Flow!](/images/intro/reference-architecture/ingress-kubernetes-traffic-flow-standalone.svg){data-zoomable}
 
 #### Firewall
 
@@ -390,7 +392,7 @@ You must provide domains. For example, we will use <strong>*.devops.example.com<
   <tr>
     <td class="tg-rm6k" colspan="2"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Allow</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Inbound</span></td>
-    <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">80;443</span></td>
+    <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">80,443</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Any</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Web Service</span></td>
   </tr>
@@ -444,7 +446,7 @@ You must provide domains. For example, we will use <strong>*.devops.example.com<
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Allow</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">TCP</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Inbound</span></td>
-    <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">80;443</span></td>
+    <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">80,443</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">Any</span></td>
     <td class="tg-rtlp"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#1C1E21">HTTP/HTTPS Inbound</span></td>
   </tr>
@@ -453,7 +455,7 @@ You must provide domains. For example, we will use <strong>*.devops.example.com<
 <br/>
 <hr/>
 
-### <ins><strong>Multi-Cluster Architecture</strong></ins>
+### <ins>**Multi-Cluster Architecture**</ins>
 
 ![Opstella Architecture!](/images/intro/reference-architecture/distributed-architecture.svg){data-zoomable}
 
@@ -480,7 +482,7 @@ Scalable deployments for production environments.
   <tr>
     <th class="tg-6hj9"></th>
     <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Number of Nodes</span></th>
-    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">CPU Cores</span></th>
+    <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">CPU (Core)</span></th>
     <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Memory (GB)</span></th>
     <th class="tg-4pf1"><span style="font-style:normal;text-decoration:none;color:#000">Disk (GB)</span></th>
   </tr></thead>
@@ -572,7 +574,7 @@ Scalable deployments for production environments.
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">DEV Application Workload Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Non-Production Workload Cluster</span></td>
   </tr>
   <tr>
     <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
@@ -589,7 +591,7 @@ Scalable deployments for production environments.
     <td class="tg-883g"><span style="font-style:normal;text-decoration:none;color:#000">40</span></td>
   </tr>
   <tr>
-    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">PRD Application Workload Cluster</span></td>
+    <td class="tg-3ejf" colspan="5"><span style="font-style:normal;text-decoration:none;color:#000;background-color:transparent">Production Workload Cluster</span></td>
   </tr>
   <tr>
     <td class="tg-lioa"><span style="font-style:normal;text-decoration:none;color:#000">Kubernetes Master Nodes</span></td>
@@ -657,7 +659,7 @@ Scalable deployments for production environments.
 
 #### Domain
 
-You must provide domains. For example, we will use <strong>*.devops.example.com</strong> and SSL certificates in this reference architecture. These are domains that will be assigned for DevSecOps tools and Opstella.
+You must provide domains. For example, we will use ***.devops.example.com** and SSL certificates in this reference architecture. These are domains that will be assigned for DevSecOps tools and Opstella.
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -775,7 +777,7 @@ You must provide domains. For example, we will use <strong>*.devops.example.com<
 
 #### Ingress
 
-![Opstella Architecture!](/images/intro/reference-architecture/ingress-kubernetes-traffic-flow-distributed.svg){data-zoomable}
+![Opstella Kubernetes Ingress Flow!](/images/intro/reference-architecture/ingress-kubernetes-traffic-flow-distributed.svg){data-zoomable}
 
 #### Firewall
 
