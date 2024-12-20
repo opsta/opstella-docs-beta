@@ -34,3 +34,36 @@ html:not(.dark) .dark-only {
 /* .VPNavBarTitle span { 
   display: none; กรณีต้องการซ่อนชื่อเว็บไซต์
 } */
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid #0e0e0e;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    text-align: center;
+    vertical-align: top;
+    color: #01051b;
+  }
+  th {
+    background-color: #ffffff;
+    font-weight: bold;
+  }
+  td {
+    background-color: #ffffff;
+  }
+  .section-header {
+    background-color:#f3f4f6;
+    font-weight: bold;
+    text-align: center;
+    color: #01051b;
+  }
+  .left-align {
+    text-align: left;
+  }
+  .total-row {
+    font-weight: bold;
+  }
