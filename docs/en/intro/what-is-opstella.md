@@ -7,7 +7,7 @@ outline: deep
 <img class="light-only" alt="Opstella Overview" src="/images/intro/what-is-opstella/opstella-overview.svg" data-zoomable />
 <img class="dark-only" alt="Opstella Overview" src="/images/intro/what-is-opstella/opstella-overview-dark.svg" data-zoomable />
 
-**Opstella is a DevSecOps Platform Engineering Single Portal** that unifies development, security, and operations to create a secure and efficient application onboarding experience for enterprises focusing on fast, reliable, and scalable software delivery. Instead of directly managing everything, **Opstella will manage and automate processes across Kubernetes, DevSecOps, and Observability tools.**
+**Opstella is a comprehensive Single Portal for DevSecOps Platform Engineering**, seamlessly integrating development, security, and operations to provide a secure and efficient application onboarding experience for enterprises prioritizing rapid, reliable, and scalable software delivery. By eliminating the need for direct management of various tools, **Opstella automates and manages tasks across Kubernetes, DevSecOps, and Observability tools.**
 
 ## <ins>**Opstella Key Features**</ins>
 
