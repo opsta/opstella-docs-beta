@@ -77,9 +77,9 @@ outline: deep
       <tr class="total-row">
         <td>Total</td>
         <td>10</td>
-        <td>11</td>
-        <td>24</td>
-        <td>260</td>
+        <td>27</td>
+        <td>64</td>
+        <td>460</td>
       </tr>
     </tbody>
   </table>
@@ -95,7 +95,7 @@ outline: deep
   </thead>
   <tbody>
     <tr>
-      <td class="left-align">Kubernetes Cluster Subnet</td>
+      <td class="left-align">Kubernetes Cluster and Related Virtual Machines Subnet</td>
       <td class="left-align">192.168.72.0/24</td>
     </tr>
     <tr>
@@ -108,7 +108,6 @@ outline: deep
     </tr>
   </tbody>
 </table>
-
 
 #### Domain
 
@@ -128,19 +127,19 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">Opstella UI</td>
-      <td class="left-align">opstella.devops.example.com</td>
+      <td class="left-align"><strong>opstella</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Opstella Core</td>
-      <td class="left-align">opstella-backend.devops.example.com</td>
+      <td class="left-align"><strong>opstella-backend</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Opstella Clear Session</td>
-      <td class="left-align">opstella-clear-session.devops.example.com</td>
+      <td class="left-align"><strong>opstella-clear-session</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Keycloak</td>
-      <td class="left-align">opstella-idp.devops.example.com</td>
+      <td class="left-align"><strong>opstella-idp</strong>.devops.example.com</td>
     </tr>
     <!-- Section: DevOps Tools -->
     <tr>
@@ -148,23 +147,23 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">ArgoCD</td>
-      <td class="left-align">argocd.devops.example.com</td>
+      <td class="left-align"><strong>argocd</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">DefectDojo</td>
-      <td class="left-align">defectdojo.devops.example.com</td>
+      <td class="left-align"><strong>defectdojo</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">GitLab</td>
-      <td class="left-align">gitlab.devops.example.com</td>
+      <td class="left-align"><strong>gitlab</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Headlamp</td>
-      <td class="left-align">headlamp.devops.example.com</td>
+      <td class="left-align"><strong>headlamp</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Harbor</td>
-      <td class="left-align">harbor.devops.example.com</td>
+      <td class="left-align"><strong>harbor</strong>.devops.example.com</td>
     </tr>
     <!-- Section: DevSecOps Tools -->
     <tr>
@@ -172,11 +171,11 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">SonarQube</td>
-      <td class="left-align">sonarqube.devops.example.com</td>
+      <td class="left-align"><strong>sonarqube</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Vault</td>
-      <td class="left-align">vault.devops.example.com</td>
+      <td class="left-align"><strong>vault</strong>.devops.example.com</td>
     </tr>
     <!-- Section: Observability Tools -->
     <tr>
@@ -184,19 +183,19 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">Loki</td>
-      <td class="left-align">loki.devops.example.com</td>
+      <td class="left-align"><strong>loki</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Grafana Dashboard</td>
-      <td class="left-align">grafana.devops.example.com</td>
+      <td class="left-align"><strong>grafana</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Tempo</td>
-      <td class="left-align">tempo.devops.example.com</td>
+      <td class="left-align"><strong>tempo</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Mimir</td>
-      <td class="left-align">mimir.devops.example.com</td>
+      <td class="left-align"><strong>mimir</strong>.devops.example.com</td>
     </tr>
     <!-- Section: Common Services -->
     <tr>
@@ -204,15 +203,14 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">MinIO</td>
-      <td class="left-align">minio.devops.example.com</td>
+      <td class="left-align"><strong>minio</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">MinIO API</td>
-      <td class="left-align">minio-api.devops.example.com</td>
+      <td class="left-align"><strong>minio-api</strong>.devops.example.com</td>
     </tr>
   </tbody>
 </table>
-
 
 #### Ingress
 
@@ -436,9 +434,9 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
 <br/>
 <hr/>
 
-### <ins>**Multi-Cluster Architecture**</ins>
+### <ins>**Multi-Clusters Architecture**</ins>
 
-![Opstella Architecture!](/images/intro/reference-architecture/distributed-architecture.svg){data-zoomable}
+![Opstella Multi-Clusters Architecture!](/images/intro/reference-architecture/distributed-architecture.svg){data-zoomable}
 
 #### Use Cases 
 
@@ -580,9 +578,9 @@ Scalable deployments for production environments.
     <tr>
       <td class="total-row">Total</td>
       <td class="total-row">36</td>
-      <td class="total-row">36</td>
-      <td class="total-row">68</td>
-      <td class="total-row">1520</td>
+      <td class="total-row">103</td>
+      <td class="total-row">186</td>
+      <td class="total-row">2140</td>
     </tr>
   </tbody>
 </table>
@@ -598,24 +596,27 @@ Scalable deployments for production environments.
   </thead>
   <tbody>
     <tr>
-      <td rowspan="4" class="subnet">4 Kubernetes Clusters Subnet</td>
+      <td class="left-align">Kubernetes DevSecOps Cluster and Related Virtual Machines Subnet</td>
       <td class="left-align">192.168.72.0/24</td>
     </tr>
     <tr>
+      <td class="left-align">Kubernetes Observability Cluster and Related Virtual Machines Subnet</td>
       <td class="left-align">192.168.73.0/24</td>
     </tr>
     <tr>
+      <td class="left-align">Kubernetes Non-Production Workload Cluster and Related Virtual Machines Subnet</td>
       <td class="left-align">192.168.74.0/24</td>
     </tr>
     <tr>
+      <td class="left-align">Kubernetes Production Workload Cluster and Related Virtual Machines Subnet</td>
       <td class="left-align">192.168.75.0/24</td>
     </tr>
     <tr>
-      <td class="subnet">Pod Subnet (per Cluster)</td>
+      <td class="left-align">Pod Subnet for each Kubernetes cluster</td>
       <td class="left-align">172.16.72.0/22</td>
     </tr>
     <tr>
-      <td class="subnet">Service Subnet (per Cluster)</td>
+      <td class="left-align">Service Subnet for each Kubernetes cluster</td>
       <td class="left-align">172.16.76.0/22</td>
     </tr>
   </tbody>
@@ -638,95 +639,95 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
     <tr>
       <td class="left-align">Opstella UI</td>
-      <td class="left-align">opstella.devops.example.com</td>
+      <td class="left-align"><strong>opstella</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Opstella Core</td>
-      <td class="left-align">opstella-backend.devops.example.com</td>
+      <td class="left-align"><strong>opstella-backend</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Opstella Clear Session</td>
-      <td class="left-align">opstella-clear-session.devops.example.com</td>
+      <td class="left-align"><strong>opstella-clear-session</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Keycloak</td>
-      <td class="left-align">opstella-idp.devops.example.com</td>
+      <td class="left-align"><strong>opstella-idp</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td colspan="2" class="section-header">DevOps Tools</td>
     </tr>
     <tr>
       <td class="left-align">ArgoCD (DEV)</td>
-      <td class="left-align">argocd-dev.devops.example.com</td>
+      <td class="left-align"><strong>argocd-dev</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">ArgoCD (PRD)</td>
-      <td class="left-align">argocd-prd.devops.example.com</td>
+      <td class="left-align"><strong>argocd-prd</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">DefectDojo</td>
-      <td class="left-align">defectdojo.devops.example.com</td>
+      <td class="left-align"><strong>defectdojo</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">GitLab</td>
-      <td class="left-align">gitlab.devops.example.com</td>
+      <td class="left-align"><strong>gitlab</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Headlamp</td>
-      <td class="left-align">headlamp.devops.example.com</td>
+      <td class="left-align"><strong>headlamp</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Harbor</td>
-      <td class="left-align">harbor.devops.example.com</td>
+      <td class="left-align"><strong>harbor</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td colspan="2" class="section-header">DevSecOps Tools</td>
     </tr>
     <tr>
       <td class="left-align">SonarQube</td>
-      <td class="left-align">sonarqube.devops.example.com</td>
+      <td class="left-align"><strong>sonarqube</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Vault</td>
-      <td class="left-align">vault.devops.example.com</td>
+      <td class="left-align"><strong>vault</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td colspan="2" class="section-header">Observability Tools</td>
     </tr>
     <tr>
       <td class="left-align">Loki</td>
-      <td class="left-align">loki.devops.example.com</td>
+      <td class="left-align"><strong>loki</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Grafana Dashboard</td>
-      <td class="left-align">grafana.devops.example.com</td>
+      <td class="left-align"><strong>grafana</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Tempo</td>
-      <td class="left-align">tempo.devops.example.com</td>
+      <td class="left-align"><strong>tempo</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">Mimir</td>
-      <td class="left-align">mimir.devops.example.com</td>
+      <td class="left-align"><strong>mimir</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td colspan="2" class="section-header">Common Services</td>
     </tr>
     <tr>
       <td class="left-align">MinIO (DevSecOps)</td>
-      <td class="left-align">minio-dso.devops.example.com</td>
+      <td class="left-align"><strong>minio-dso</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">MinIO API (DevSecOps)</td>
-      <td class="left-align">minio-dso-api.devops.example.com</td>
+      <td class="left-align"><strong>minio-dso-api</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">MinIO (Observability)</td>
-      <td class="left-align">minio-obs.devops.example.com</td>
+      <td class="left-align"><strong>minio-obs</strong>.devops.example.com</td>
     </tr>
     <tr>
       <td class="left-align">MinIO API (Observability)</td>
-      <td class="left-align">minio-obs-api.devops.example.com</td>
+      <td class="left-align"><strong>minio-obs-api</strong>.devops.example.com</td>
     </tr>
   </tbody>
 </table>
