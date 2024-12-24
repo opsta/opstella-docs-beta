@@ -15,74 +15,80 @@ outline: deep
 
 #### Specification
 
-  <table>
-    <thead>
-      <tr>
-        <th style="color:#000;background-color:#ffffff"></th>
-        <th style="color:#000;background-color:#ffffff">Number of Nodes</th>
-        <th style="color:#000;background-color:#ffffff">CPU (Core)</th>
-        <th style="color:#000;background-color:#ffffff">Memory (GB)</th>
-        <th style="color:#000;background-color:#ffffff">Disk (GB)</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="section-header" colspan="5">Virtual Machines</td>
-      </tr>
-      <tr>
-        <td class="left-align">Bastion Host</td>
-        <td>1</td>
-        <td>1</td>
-        <td>2</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td class="left-align">HAProxy</td>
-        <td>1</td>
-        <td>1</td>
-        <td>2</td>
-        <td>20</td>
-      </tr>
-      <tr>
-        <td class="left-align">NFS Share</td>
-        <td>1</td>
-        <td>1</td>
-        <td>2</td>
-        <td>100</td>
-      </tr>
-      <tr>
-        <td class="left-align">GitLab</td>
-        <td>1</td>
-        <td>2</td>
-        <td>4</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td class="section-header" colspan="5">Kubernetes Cluster</td>
-      </tr>
-      <tr>
-        <td class="left-align">Kubernetes Master Nodes</td>
-        <td>1</td>
-        <td>2</td>
-        <td>4</td>
-        <td>40</td>
-      </tr>
-      <tr>
-        <td class="left-align">Kubernetes Worker Nodes</td>
-        <td>5</td>
-        <td>4</td>
-        <td>10</td>
-        <td>40</td>
-      </tr>
-      <tr class="total-row">
-        <td>Total</td>
-        <td>10</td>
-        <td>27</td>
-        <td>64</td>
-        <td>460</td>
-      </tr>
-    </tbody>
-  </table>
+These are specifications of virtual machines that need to be created with the following details
+
+* CPU: **Intel Xeon E-2334 (3.4GHz, 4C/8T, 8MB Cache)**
+* Network Bandwidth: **1Gbps**
+* Operating System: **Ubuntu 24.04.1 (Noble Numbat)**
+
+<table>
+  <thead>
+    <tr>
+      <th style="color:#000;background-color:#ffffff"></th>
+      <th style="color:#000;background-color:#ffffff">Number of Nodes</th>
+      <th style="color:#000;background-color:#ffffff">CPU (Core)</th>
+      <th style="color:#000;background-color:#ffffff">Memory (GB)</th>
+      <th style="color:#000;background-color:#ffffff">Disk (GB)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="section-header" colspan="5">Virtual Machines</td>
+    </tr>
+    <tr>
+      <td class="left-align">Bastion Host</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td class="left-align">HAProxy</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td class="left-align">NFS Share</td>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td class="left-align">GitLab</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td class="section-header" colspan="5">Kubernetes Cluster</td>
+    </tr>
+    <tr>
+      <td class="left-align">Kubernetes Master Nodes</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td class="left-align">Kubernetes Worker Nodes</td>
+      <td>5</td>
+      <td>4</td>
+      <td>10</td>
+      <td>40</td>
+    </tr>
+    <tr class="total-row">
+      <td>Total</td>
+      <td>10</td>
+      <td>27</td>
+      <td>64</td>
+      <td>460</td>
+    </tr>
+  </tbody>
+</table>
 
 #### Network Subnet
 
@@ -367,7 +373,7 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     <tr>
       <td class="left-align" colspan="2">Allow</td>
       <td class="left-align">Inbound</td>
-      <td class="left-align">80,443</td>
+      <td class="left-align">80, 443</td>
       <td class="left-align">Any</td>
       <td class="left-align">Web Services</td>
     </tr>
@@ -429,8 +435,6 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
     </tr>
   </tbody>
 </table>
-
-
 <br/>
 <hr/>
 
@@ -443,6 +447,12 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
 Scalable deployments for production environments.
 
 #### Specification
+
+These are specifications of virtual machines that need to be created with the following details
+
+* CPU: **Intel Xeon Silver 4310 (2.1GHz, 12C/24T, 18MB Cache)**
+* Network Bandwidth: **10Gbps**
+* Operating System: **Ubuntu 24.04.1 (Noble Numbat)**
 
 <table>
   <thead>
@@ -508,7 +518,7 @@ Scalable deployments for production environments.
       <td>40</td>
     </tr>
     <tr>
-      <td class="section-header" colspan="5">DevSecOps Cluster</td>
+      <td class="section-header" colspan="5">Kubernetes DevSecOps Cluster</td>
     </tr>
     <tr>
       <td class="left-align">Kubernetes Master Nodes</td>
@@ -525,7 +535,7 @@ Scalable deployments for production environments.
       <td>40</td>
     </tr>
     <tr>
-      <td class="section-header" colspan="5">Observability Cluster</td>
+      <td class="section-header" colspan="5">Kubernetes Observability Cluster</td>
     </tr>
     <tr>
       <td class="left-align">Kubernetes Master Nodes</td>
@@ -542,7 +552,7 @@ Scalable deployments for production environments.
       <td>40</td>
     </tr>
     <tr>
-      <td class="section-header" colspan="5">Non-Production Workload Cluster</td>
+      <td class="section-header" colspan="5">Kubernetes Non-Production Workload Cluster</td>
     </tr>
     <tr>
       <td class="left-align">Kubernetes Master Nodes</td>
@@ -559,7 +569,7 @@ Scalable deployments for production environments.
       <td>40</td>
     </tr>
     <tr>
-      <td class="section-header" colspan="5">Production Workload Cluster</td>
+      <td class="section-header" colspan="5">Kubernetes Production Workload Cluster</td>
     </tr>
     <tr>
       <td class="left-align">Kubernetes Master Nodes</td>
@@ -732,7 +742,6 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
   </tbody>
 </table>
 
-
 #### Ingress
 
 ![Opstella Kubernetes Ingress Flow!](/images/intro/reference-architecture/ingress-kubernetes-traffic-flow-distributed.svg){data-zoomable}
@@ -818,7 +827,7 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
       <td class="left-align">Allow</td>
       <td class="left-align">TCP</td>
       <td class="left-align">Inbound</td>
-      <td class="left-align">30080;30443</td>
+      <td class="left-align">30080, 30443</td>
       <td class="left-align">HAProxy</td>
       <td class="left-align">NodePort Ingress Service</td>
     </tr>
@@ -880,7 +889,7 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
       <td class="left-align">Allow</td>
       <td class="left-align">TCP</td>
       <td class="left-align">Inbound</td>
-      <td class="left-align">80; 443</td>
+      <td class="left-align">80, 443</td>
       <td class="left-align">Any</td>
       <td class="left-align">Web Service</td>
     </tr>
@@ -935,7 +944,7 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
       <td class="left-align">Allow</td>
       <td class="left-align">TCP</td>
       <td class="left-align">Inbound</td>
-      <td class="left-align">80;443</td>
+      <td class="left-align">80, 443</td>
       <td class="left-align">Any</td>
       <td class="left-align">HTTP/HTTPS Inbound</td>
     </tr>
