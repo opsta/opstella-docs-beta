@@ -47,4 +47,18 @@ features:
       height: 32
     details: Important use cases
     link: /usecase/argocd-ui
+  - title: Troubleshoot
+    icon:
+      src: /images/heroes/troubleshoot.png
+      width: 32
+      height: 32
+    details: Opstella troubleshoot-job showcases steps to identify and fix system issues efficiently.
+    link: /troubleshoot/check-application-job
+  # - title: Cluster
+  #   icon:
+  #     src: /images/heroes/kubernetes.svg
+  #     width: 32
+  #     height: 32
+  #   details: Details of the Kubernetes cluster related to the opstella system
+  #   link: /intro/cluster
 ---

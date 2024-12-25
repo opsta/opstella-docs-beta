@@ -330,7 +330,7 @@ function sidebar(): DefaultTheme.Sidebar {
                 },
                 {
                   text: "Sync User",
-                  link: "/sync-User",
+                  link: "/sync-user",
                 },
               ],
             },

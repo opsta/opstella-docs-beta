@@ -15,10 +15,10 @@ export default defineConfig({
   head: [["link", { rel: "icon", href: "/images/favicon.svg" }]],
   locales: {
     root: { label: "English", ...en },
-    th: {
-      label: "Thai",
-      ...th,
-    },
+    // th: {
+    //   label: "Thai",
+    //   ...th,
+    // },
   },
   // themeConfig: {
   //   // https://vitepress.dev/reference/default-theme-config
