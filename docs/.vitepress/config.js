@@ -20,12 +20,20 @@ export default defineConfig({
       ...th,
     },
   },
+  themeConfig: {
+    siteTitle: '',
+    logo: { light:  "/images/opstella-docs.svg", dark:  "/images/opstella-docs-dark.svg", alt: 'logo', width: 274, height: 40 },
+    search: {
+      provider: 'local'
+    },
+    footer: {
+      message: 'We build Enterprise Platform Engineering to digitalized transform your organization into a DevSecOps culture.',
+      copyright: 'Copyright © 2025 Opsta (Thailand). All rights reserved.'
+    }
+  }
   // themeConfig: {
   //   // https://vitepress.dev/reference/default-theme-config
-  //   // logo: { src: "/images/opstella-logo.svg", width: 24, height: 24 },
-  //   search: {
-  //     provider: "local",
-  //   },
+  //  
   //   nav: [
   //     {
   //       text: "Intro",
