@@ -440,7 +440,7 @@ You must provide domains. For example, we will use ***.devops.example.com** and 
 
 ### <ins>**Multi-Clusters Architecture**</ins>
 
-![Opstella Multi-Clusters Architecture!](/images/intro/reference-architecture/distributed-architecture.svg){data-zoomable}
+![Opstella Multi-Clusters Architecture!](/images/intro/reference-architecture/multi-clusters.svg){data-zoomable}
 
 #### Use Cases 
 
