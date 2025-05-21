@@ -1,80 +1,76 @@
+---
+outline: deep
+---
+
 # Non Production
 
-![Role Non Production](/images/role-and-permission/role/nonProduction.png){data-zoomable}
+**Permission on DevOpsTool**
 
-# Permission on DevOpsTool
+Since this is the Non-Production (Service) role, which is higher than the Component layer, it has the same access to DevOps tools as roles in the Component layer.
 
-<br/>
+## GitLab
 
-เนื่องจากเป็น Role Non Production (Service) ซึ่งเป็น Role ที่สูงกว่า Component จึงสามารถใช้งาน DevOpsTool ได้เหมือนกับ Role ใน Layer Component ด้วย
+### Manage Repository
 
-### GitLab
+* Access and manage all repositories
+* Edit repository settings
+* Create, edit, and delete branches
+* Control and manage tags
+* Manage webhooks
 
-Manage Repository:
+### Merge Requests
 
-- สามารถเข้าถึงและจัดการ repository ทั้งหมด
-- แก้ไข settings ของ repository
-- สร้าง, แก้ไข, และลบ branch
-- ควบคุมและจัดการ tags
-- สามารถจัดการ webhooks
+* Create, edit, and delete merge requests
+* Review and accept merge requests
+* Use squash and merge options
 
-Merge Requests:
+### Issues
 
-- สามารถสร้าง, แก้ไข, และลบ merge requests
-- รีวิวและยอมรับ merge requests
-- สามารถใช้ squash และ merge options
+* Create, edit, and delete issues
+* Manage issue boards
+* Define, edit, and delete labels
+* Manage milestones and epics
 
-Issues:
+### CI/CD
 
-- สามารถสร้าง, แก้ไข, และลบ issues
-- จัดการ issue boards
-- กำหนด, แก้ไข, และลบ labels
-- จัดการ milestones และ epics
+* Manage pipelines and jobs
+* Edit, delete, and trigger pipelines
+* View job logs
 
-CI/CD:
+### Permissions
 
-- สามารถจัดการ pipeline และ jobs
-- สามารถแก้ไข, ลบ และเริ่ม pipelines
-- สามารถดู logs ของ jobs
+* Invite new members to the project
+* Change roles of members with lower permissions
 
-Permissions:
+### Protected Branches and Tags
 
-- สามารถเชิญสมาชิกใหม่เข้ามาใน project
-- เปลี่ยนแปลง roles ของสมาชิกที่มีสิทธิ์ต่ำกว่า
+* Manage protected branches and protected tags
+* Define who can push, merge, and tag in branches and tags that are protected
 
-Protected Branches and Tags:
+### Wiki and Snippets
 
-- สามารถจัดการ protected branches และ protected tags
-- สามารถกำหนดว่าใครมีสิทธิ์ push, merge, และ tag ใน branches และ tags ที่ถูกป้องกัน
+* Create, edit, and delete wiki pages
+* Manage project snippets
 
-Wiki และ Snippets:
+## Kubernetes
 
-- สามารถสร้าง, แก้ไข, และลบ wiki pages
-- จัดการ project snippets
-
-### Opensearch
-
-- มองเห็น Tenant ที่เป็น Non Production อย่างเดียว
-
-### Kubernetes
-
-- Kubernetes Config
+Kubernetes Config
 
 kube-non-production-admin-role
 
-- pods : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ pods ทั้งหมดในคลัสเตอร์
-- pods/log : อนุญาตให้คุณดู log ของ pod ใด ๆ ในคลัสเตอร์
-- services : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการบริการทั้งหมดในคลัสเตอร์
-- endpoints : อนุญาตให้คุณดู endpoints ทั้งหมดในคลัสเตอร์
-- secrets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ secrets ทั้งหมดในคลัสเตอร์
-- deployments : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ deployments ทั้งหมดในคลัสเตอร์
-- jobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ jobs ทั้งหมดในคลัสเตอร์
-- cronjobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ cronjobs ทั้งหมดในคลัสเตอร์
-- configmaps : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ configmaps ทั้งหมดในคลัสเตอร์
-- persistentvolumeclaims : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ persistentvolumeclaims ทั้งหมดในคลัสเตอร์
-- ingresses : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ ingresses ทั้งหมดในคลัสเตอร์
-- daemonsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ daemonsets ทั้งหมดในคลัสเตอร์
-- events : อนุญาตให้คุณดู events ทั้งหมดในคลัสเตอร์
-- replicasets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ replicasets ทั้งหมดในคลัสเตอร์
-- replicationcontrollers : อนุญาตให้คุณดู replicationcontrollers ทั้งหมดในคลัสเตอร์
-- statefulsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ statefulsets ทั้งหมดในคลัสเตอร์
+* pods : View, edit, create, delete, and manage all pods in the cluster
+* pods/log : View logs of any pod in the cluster
+* services : View, edit, create, delete, and manage all services in the cluster
+* endpoints : View all endpoints in the cluster
+* secrets : View, edit, create, delete, and manage all secrets in the cluster
+* deployments : View, edit, create, delete, and manage all deployments in the cluster
+* jobs : View, edit, create, delete, and manage all jobs in the cluster
+* cronjobs : View, edit, create, delete, and manage all cronjobs in the cluster
+* configmaps : View, edit, create, delete, and manage all configmaps in the cluster
+* persistentvolumeclaims : View, edit, create, delete, and manage all persistentvolumeclaims in the cluster
+* ingresses : View, edit, create, delete, and manage all ingresses in the cluster
+* daemonsets : View, edit, create, delete, and manage all daemonsets in the cluster
+* events : View all events in the cluster
+* replicasets : View, edit, create, delete, and manage all replicasets in the cluster
+* replicationcontrollers : View all replicationcontrollers in the cluster
+* statefulsets : View, edit, create, delete, and manage all statefulsets in the cluster

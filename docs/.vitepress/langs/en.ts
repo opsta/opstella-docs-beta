@@ -86,7 +86,7 @@ function sidebar(): DefaultTheme.Sidebar {
               link: "/",
               items: [
                 {
-                  text: "Admin (Opstella)",
+                  text: "Root Admin",
                   link: "/admin-company",
                 },
                 {
@@ -115,11 +115,11 @@ function sidebar(): DefaultTheme.Sidebar {
                 },
               ],
             },
-            {
-              text: "Role Recommendations",
-              link: "/role-commendations",
-            },
-            { text: "Create User", link: "/create-user" },
+            // {
+            //   text: "Role Recommendations",
+            //   link: "/role-commendations",
+            // },
+            // { text: "Create User", link: "/create-user" },
           ],
         },
       ],

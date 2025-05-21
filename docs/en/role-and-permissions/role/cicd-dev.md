@@ -1,49 +1,51 @@
+---
+outline: deep
+---
+
 # CI/CD DEV
 
-![Role Dev CI/CD](/images/role-and-permission/role/DevCICD.png){data-zoomable}
+**Permission on DevOpsTool**
 
-## Permission on DevOpsTool
+## GitLab
 
-### GitLab
+### Manage Repository
 
-Manage Repository:
+* Access and manage all repositories
+* Edit repository settings
+* Create, edit, and delete branches
+* Control and manage tags
+* Manage webhooks
 
-- สามารถเข้าถึงและจัดการ repository ทั้งหมด
-- แก้ไข settings ของ repository
-- สร้าง, แก้ไข, และลบ branch
-- ควบคุมและจัดการ tags
-- สามารถจัดการ webhooks
+### Merge Requests
 
-Merge Requests:
+* Create, edit, and delete merge requests
+* Review and accept merge requests
+* Use squash and merge options
 
-- สามารถสร้าง, แก้ไข, และลบ merge requests
-- รีวิวและยอมรับ merge requests
-- สามารถใช้ squash และ merge options
+### Issues
 
-Issues:
+* Create, edit, and delete issues
+* Manage issue boards
+* Define, edit, and delete labels
+* Manage milestones and epics
 
-- สามารถสร้าง, แก้ไข, และลบ issues
-- จัดการ issue boards
-- กำหนด, แก้ไข, และลบ labels
-- จัดการ milestones และ epics
+### CI/CD
 
-CI/CD:
+* Manage pipelines and jobs
+* Edit, delete, and trigger pipelines
+* View job logs
 
-- สามารถจัดการ pipeline และ jobs
-- สามารถแก้ไข, ลบ และเริ่ม pipelines
-- สามารถดู logs ของ jobs
+### Permissions
 
-Permissions:
+* Invite new members to the project
+* Change roles of members with lower permissions
 
-- สามารถเชิญสมาชิกใหม่เข้ามาใน project
-- เปลี่ยนแปลง roles ของสมาชิกที่มีสิทธิ์ต่ำกว่า
+### Protected Branches and Tags
 
-Protected Branches and Tags:
+* Manage protected branches and protected tags
+* Define who can push, merge, and tag in branches and tags that are protected
 
-- สามารถจัดการ protected branches และ protected tags
-- สามารถกำหนดว่าใครมีสิทธิ์ push, merge, และ tag ใน branches และ tags ที่ถูกป้องกัน
+### Wiki and Snippets
 
-Wiki และ Snippets:
-
-- สามารถสร้าง, แก้ไข, และลบ wiki pages
-- จัดการ project snippets
+* Create, edit, and delete wiki pages
+* Manage project snippets

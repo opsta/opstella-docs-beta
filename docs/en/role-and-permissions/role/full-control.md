@@ -1,230 +1,212 @@
+---
+outline: deep
+---
+
 # Full Control
 
-![Role Full Control](/images/role-and-permission/role/fullcontrols.png){data-zoomable}
+**Permission on DevOpsTool**
 
-## Permission on DevOpsTool
+Since this is the Full Control (Service) role, which is higher than the Component layer, it has the same access to DevOps tools as roles in the Component layer.
 
-เนื่องจากเป็น Role Full Control (Service) ซึ่งเป็น Role ที่สูงกว่า Component จึงสามารถใช้งาน DevOpsTool ได้เหมือนกับ Role ใน Layer Component ด้วย
+## GitLab
 
-### GitLab
+### Manage Repository
 
-Manage Repository:
+* Access and manage all repositories
+* Edit repository settings
+* Create, edit, and delete branches
+* Control and manage tags
+* Manage webhooks
 
-- สามารถเข้าถึงและจัดการ repository ทั้งหมด
-- แก้ไข settings ของ repository
-- สร้าง, แก้ไข, และลบ branch
-- ควบคุมและจัดการ tags
-- สามารถจัดการ webhooks
+### Merge Requests
 
-Merge Requests:
+* Create, edit, and delete merge requests
+* Review and accept merge requests
+* Use squash and merge options
 
-- สามารถสร้าง, แก้ไข, และลบ merge requests
-- รีวิวและยอมรับ merge requests
-- สามารถใช้ squash และ merge options
+### Issues
 
-Issues:
+* Create, edit, and delete issues
+* Manage issue boards
+* Define, edit, and delete labels
+* Manage milestones and epics
 
-- สามารถสร้าง, แก้ไข, และลบ issues
-- จัดการ issue boards
-- กำหนด, แก้ไข, และลบ labels
-- จัดการ milestones และ epics
+### CI/CD
 
-CI/CD:
+* Manage pipelines and jobs
+* Edit, delete, and trigger pipelines
+* View job logs
 
-- สามารถจัดการ pipeline และ jobs
-- สามารถแก้ไข, ลบ และเริ่ม pipelines
-- สามารถดู logs ของ jobs
+### Permissions
 
-Permissions:
+* Invite new members to the project
+* Change roles of members with lower permissions
 
-- สามารถเชิญสมาชิกใหม่เข้ามาใน project
-- เปลี่ยนแปลง roles ของสมาชิกที่มีสิทธิ์ต่ำกว่า
+### Protected Branches and Tags
 
-Protected Branches and Tags:
+* Manage protected branches and protected tags
+* Define who can push, merge, and tag in branches and tags that are protected
 
-- สามารถจัดการ protected branches และ protected tags
-- สามารถกำหนดว่าใครมีสิทธิ์ push, merge, และ tag ใน branches และ tags ที่ถูกป้องกัน
+### Wiki and Snippets
 
-Wiki และ Snippets:
+* Create, edit, and delete wiki pages
+* Manage project snippets
 
-- สามารถสร้าง, แก้ไข, และลบ wiki pages
-- จัดการ project snippets
+## Sonarqube
 
-### Sonarqube
+### Browse
 
-Browse:
+* View the project and all related information (e.g., metrics, dashboards, and analysis results)
+* View code analysis results but cannot make any edits
 
-- สามารถดู project และข้อมูลทั้งหมดที่เกี่ยวข้องได้ (เช่น เมตริก, dashboard, และหน้าแสดงผลลัพธ์การวิเคราะห์)
-- สามารถดูผลลัพธ์ของการวิเคราะห์ code แต่ไม่สามารถทำการแก้ไขใด ๆ ได้
+### See Source Code
 
-See Source Code:
+* View source code analyzed by SonarQube
+* Use to see context of issues and security hotspots that SonarQube detects in source code
 
-- สามารถดู source code ที่ถูกวิเคราะห์โดย SonarQube
-- ใช้ดู context ของ issues และ security hotspots ที่ SonarQube ตรวจพบใน source code
+### Administer Issues
 
-Administer Issues:
+* Manage detected issues (e.g., change status, add comments, assign responsibility, and set priority)
+* Customize rules and profiles related to issue analysis
 
-- สามารถจัดการกับ issues ที่ถูกตรวจพบ (เช่น แก้ไขสถานะ, เพิ่มความคิดเห็น, กำหนดบุคคลที่รับผิดชอบ, และตั้ง priority)
-- สามารถปรับแต่ง rules และ profiles ที่เกี่ยวข้องกับการวิเคราะห์ issues
+### Administer Security Hotspots
 
-Administer Security Hotspots:
+* Manage security hotspots (e.g., change status, add comments, assign responsibility, and set priority)
+* Customize rules and profiles related to security hotspot analysis
 
-- สามารถจัดการกับ security hotspots (เช่น แก้ไขสถานะ, เพิ่มความคิดเห็น, กำหนดบุคคลที่รับผิดชอบ, และตั้ง priority)
-- สามารถปรับแต่ง rules และ profiles ที่เกี่ยวข้องกับการวิเคราะห์ security hotspots
+### Administer
 
-Administer:
+* Highest level of project permissions
+* Customize project settings (e.g., change project name, set branch defaults, and adjust permissions)
+* Manage user permissions in the project
+* Customize quality profiles and quality gates
 
-- มีสิทธิ์ระดับสูงสุดใน project
-- สามารถปรับแต่ง settings ของ project (เช่น เปลี่ยนชื่อ project, ตั้งค่า branch, และปรับแต่ง permissions)
-- จัดการ permissions ของผู้ใช้ใน project
-- ปรับแต่ง quality profiles และ quality gates
+### Execute Analysis
 
-Execute Analysis:
+* Analyze source code and submit results to SonarQube
+* This permission is required to configure CI/CD pipelines to run automated analysis
 
-- สามารถทำการวิเคราะห์ source code และส่งผลลัพธ์เข้าสู่ SonarQube
-- ต้องการสิทธิ์นี้ในการตั้งค่า CI/CD pipeline เพื่อให้สามารถรันการวิเคราะห์อัตโนมัติได้
+## Harbor
 
-### Harbor
+### Manage Repositories
 
-Manage Repositories:
+* Create, delete, and configure repositories within the project
+* Push and pull artifacts (e.g., Docker images, Helm charts) to/from repositories
+* View and manage tags within repositories
 
-- สร้าง, ลบ, และปรับแต่ง repository ภายใน project
-- Push และ pull artifacts (เช่น Docker images, Helm charts) ไปยัง repository
-- ดูและจัดการ tags ภายใน repository
+### Manage Project Members
 
-Manage Project Members:
+* Invite new members to the project
+* Assign roles to members within the project (cannot edit admin permissions)
 
-- เชิญสมาชิกใหม่เข้ามาใน project
-- กำหนด roles ของสมาชิกภายใน project (แต่ไม่สามารถแก้ไขสิทธิ์ของ admin)
+### Manage Permissions
 
-Manage Permissions:
+* Manage user access and permissions within the project
+* Configure access policies for repositories
 
-- จัดการการเข้าถึงและสิทธิ์ของผู้ใช้งานภายใน project
-- ตั้งค่า access policies สำหรับ repository ต่าง ๆ
+### Artifact Management
 
-Artifact Management:
+* Scan artifacts for vulnerabilities and security issues
+* View scan results and manage identified issues
+* Sign and verify artifact signatures for security
 
-- สแกน artifacts เพื่อหาช่องโหว่และปัญหาด้านความปลอดภัย
-- ดูผลลัพธ์ของการสแกนและจัดการกับ issues ที่พบ
-- ลงนามและตรวจสอบการลงนามของ artifacts เพื่อความปลอดภัย
+### Replication
 
-Replication:
+* Configure and manage replication rules to replicate artifacts to/from other Harbor instances
 
-- ตั้งค่าและจัดการ replication rules เพื่อ replicate artifacts ไปยังหรือจาก Harbor instance อื่น ๆ
+## Grafana
 
-### Grafana
+### View Charts and Data
 
-ดูแผนภูมิและข้อมูล:
+* View charts and data within the organization (cannot edit or change)
 
-- สามารถดูแผนภูมิและข้อมูลต่าง ๆ ที่มีในองค์กรได้โดยไม่สามารถแก้ไขหรือเปลี่ยนแปลงข้อมูลใด ๆ
+### Create and Edit Private Charts
 
-สร้างและแก้ไขแผนภูมิส่วนตัว:
+* Create and edit only private dashboards (not shareable or accessible to other users)
 
-- สามารถสร้างและแก้ไขเพียงแผนภูมิส่วนตัว (Private Dashboard) เท่านั้นซึ่งจะไม่สามารถแชร์หรือเข้าถึงได้จากผู้ใช้อื่น
+### Customize Display
 
-ปรับแต่งการแสดงผล:
+* Customize the display of viewed charts
 
-- สามารถปรับแต่งการแสดงผลของแผนภูมิที่เห็นได้ตามความต้องการ
+### Set Notifications
 
-กำหนดการแจ้งเตือน:
+* Set notifications for oneself (cannot set for other users)
 
-- สามารถกำหนดการแจ้งเตือนให้กับตนเอง โดยไม่สามารถกำหนดการแจ้งเตือนให้ผู้ใช้อื่นได้
+## Vault
 
-### Vault
+### create
 
-create:
+* Create new data in Vault
 
-- อนุญาตให้สร้างข้อมูลใหม่ใน Vault
+### read
 
-read:
+* Read existing data in Vault
 
-- อนุญาตให้อ่านข้อมูลที่มีอยู่แล้วใน Vault
+### update
 
-update:
+* Edit existing data in Vault
 
-- อนุญาตให้แก้ไขข้อมูลที่มีอยู่แล้วใน Vault
+### delete
 
-delete:
+* Remove data from Vault
 
-- อนุญาตให้ลบข้อมูลออกจาก Vault
+### list
 
-list:
+* List data in Vault
 
-- อนุญาตให้แสดงรายการข้อมูลที่มีอยู่ใน Vault
+## Headlamp
 
-### Headlamp
+### Resources
 
-Resources:
+* Pods, pods/log, services, endpoints, secrets, deployments, jobs, cronjobs, configmaps, persistentvolumeclaims, ingresses, daemonsets, events, replicasets, replicationcontrollers, statefulsets
+* Retrieve (get) and display information about the resources listed above within a service (namespace), but cannot perform other actions like create or update
 
-pods ,
-pods/log ,
-services ,
-endpoints ,
-secrets ,
-deployments ,
-jobs ,
-cronjobs ,
-configmaps ,
-persistentvolumeclaims ,
-ingresses ,
-daemonsets ,
-events ,
-replicasets ,
-replicationcontrollers ,
-statefulsets
+## ArgoCD
 
-สามารถดึงข้อมูล (get) และแสดงข้อมูลที่มีอยู่ในทรัพยากรต่าง ๆ ที่ระบุด้านบนภายใน service (namespace) แต่ไม่มีสิทธิ์ในการดำเนินการอื่น เช่น สร้างหรืออัปเดต ได้
+* Create, edit, and delete applications
+* Synchronize applications manually
+* Trigger actions on applications (e.g., sync verification, reset, and abort sync)
+* View and manage application-related resources (e.g., deployments, services, secrets, configmaps)
+* View and analyze application metrics (e.g., CPU, memory, network usage)
 
-### ArgoCD
+## Kubernetes
 
-- สร้าง แก้ไข และลบ แอปพลิเคชัน
-- ซิงค์ แอปพลิเคชันด้วยตนเอง
-- เรียกใช้แอ็กชันต่างๆ บนแอปพลิเคชัน เช่น การตรวจสอบซิงค์ การรีเซ็ต และการยกเลิกการซิงค์
-- ดูและจัดการทรัพยากรที่เกี่ยวข้องกับแอปพลิเคชัน เช่น deployments, services, secrets, configmaps
-- ดูและวิเคราะห์ข้อมูลเมตริกเกี่ยวกับแอปพลิเคชัน เช่น CPU, memory, network usage
+### Kubernetes Config
 
-### Opensearch
+### kube-non-production-admin-role
 
-- มองเห็น Tenant ที่เป็น Non Production และ Production
+* pods : View, edit, create, delete, and manage all pods in the cluster
+* pods/log : View logs of any pod in the cluster
+* services : View, edit, create, delete, and manage all services in the cluster
+* endpoints : View all endpoints in the cluster
+* secrets : View, edit, create, delete, and manage all secrets in the cluster
+* deployments : View, edit, create, delete, and manage all deployments in the cluster
+* jobs : View, edit, create, delete, and manage all jobs in the cluster
+* cronjobs : View, edit, create, delete, and manage all cronjobs in the cluster
+* configmaps : View, edit, create, delete, and manage all configmaps in the cluster
+* persistentvolumeclaims : View, edit, create, delete, and manage all persistentvolumeclaims in the cluster
+* ingresses : View, edit, create, delete, and manage all ingresses in the cluster
+* daemonsets : View, edit, create, delete, and manage all daemonsets in the cluster
+* events : View all events in the cluster
+* replicasets : View, edit, create, delete, and manage all replicasets in the cluster
+* replicationcontrollers : View all replicationcontrollers in the cluster
+* statefulsets : View, edit, create, delete, and manage all statefulsets in the cluster
 
-### Kubernetes
+### kube-production-admin-role
 
-- Kubernetes Config
-
-kube-non-production-admin-role
-
-- pods : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ pods ทั้งหมดในคลัสเตอร์
-- pods/log : อนุญาตให้คุณดู log ของ pod ใด ๆ ในคลัสเตอร์
-- services : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการบริการทั้งหมดในคลัสเตอร์
-- endpoints : อนุญาตให้คุณดู endpoints ทั้งหมดในคลัสเตอร์
-- secrets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ secrets ทั้งหมดในคลัสเตอร์
-- deployments : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ deployments ทั้งหมดในคลัสเตอร์
-- jobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ jobs ทั้งหมดในคลัสเตอร์
-- cronjobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ cronjobs ทั้งหมดในคลัสเตอร์
-- configmaps : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ configmaps ทั้งหมดในคลัสเตอร์
-- persistentvolumeclaims : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ persistentvolumeclaims ทั้งหมดในคลัสเตอร์
-- ingresses : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ ingresses ทั้งหมดในคลัสเตอร์
-- daemonsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ daemonsets ทั้งหมดในคลัสเตอร์
-- events : อนุญาตให้คุณดู events ทั้งหมดในคลัสเตอร์
-- replicasets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ replicasets ทั้งหมดในคลัสเตอร์
-- replicationcontrollers : อนุญาตให้คุณดู replicationcontrollers ทั้งหมดในคลัสเตอร์
-- statefulsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ statefulsets ทั้งหมดในคลัสเตอร์
-
-kube-production-admin-role
-
-- pods : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ pods ทั้งหมดในคลัสเตอร์
-- pods/log : อนุญาตให้คุณดู log ของ pod ใด ๆ ในคลัสเตอร์
-- services : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการบริการทั้งหมดในคลัสเตอร์
-- endpoints : อนุญาตให้คุณดู endpoints ทั้งหมดในคลัสเตอร์
-- secrets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ secrets ทั้งหมดในคลัสเตอร์
-- deployments : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ deployments ทั้งหมดในคลัสเตอร์
-- jobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ jobs ทั้งหมดในคลัสเตอร์
-- cronjobs : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ cronjobs ทั้งหมดในคลัสเตอร์
-- configmaps : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ configmaps ทั้งหมดในคลัสเตอร์
-- persistentvolumeclaims : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ persistentvolumeclaims ทั้งหมดในคลัสเตอร์
-- ingresses : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ ingresses ทั้งหมดในคลัสเตอร์
-- daemonsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ daemonsets ทั้งหมดในคลัสเตอร์
-- events : อนุญาตให้คุณดู events ทั้งหมดในคลัสเตอร์
-- replicasets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ replicasets ทั้งหมดในคลัสเตอร์
-- replicationcontrollers : อนุญาตให้คุณดู replicationcontrollers ทั้งหมดในคลัสเตอร์
-- statefulsets : อนุญาตให้คุณดู แก้ไข สร้าง ลบ และจัดการ statefulsets ทั้งหมดในคลัสเตอร์
+* pods : View, edit, create, delete, and manage all pods in the cluster
+* pods/log : View logs of any pod in the cluster
+* services : View, edit, create, delete, and manage all services in the cluster
+* endpoints : View all endpoints in the cluster
+* secrets : View, edit, create, delete, and manage all secrets in the cluster
+* deployments : View, edit, create, delete, and manage all deployments in the cluster
+* jobs : View, edit, create, delete, and manage all jobs in the cluster
+* cronjobs : View, edit, create, delete, and manage all cronjobs in the cluster
+* configmaps : View, edit, create, delete, and manage all configmaps in the cluster
+* persistentvolumeclaims : View, edit, create, delete, and manage all persistentvolumeclaims in the cluster
+* ingresses : View, edit, create, delete, and manage all ingresses in the cluster
+* daemonsets : View, edit, create, delete, and manage all daemonsets in the cluster
+* events : View all events in the cluster
+* replicasets : View, edit, create, delete, and manage all replicasets in the cluster
+* replicationcontrollers : View all replicationcontrollers in the cluster
+* statefulsets : View, edit, create, delete, and manage all statefulsets in the cluster

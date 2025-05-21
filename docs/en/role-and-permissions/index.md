@@ -1,15 +1,14 @@
-# Permission Inherited
+# Permission Inheritance
 
-![Logo Harbor](/images/role-and-permission/PermissionLevel1.png){data-zoomable}
+![](/images/role-and-permission/permissionInheritance.png){data-zoomable}
 
-### การสืบทอด Permission ใน Opstella
+When you assign a role to a user at any level, those permissions are automatically **inherited** by the levels below it.
 
-เมื่อ User ถูกเพิ่ม Role เข้าไปใน Layer แล้วจะได้รับ Role เดียวกันใน Layer ที่อยู่ถัดลงมา **ยกตัวอย่าง เช่น**
+**Simple Examples:**
 
-- เพิ่ม user A เป็น Admin ที่ Layer Platform ตัว user A จะได้ Role ใน Sercvice และ Component ด้วย
-- เพิ่ม user B เป็น Full Control ที่ Layer ทำให้ user B จะได้ Role ที่ Component ด้วย แต่ไม่สามารถไปจัดการบน Layer Platform ได้
-- ไม่สามารถเพิ่ม user เป็น Admin เพราะ ที่ Layer ต่ำกว่า Platform เพราะ เป็น Role ที่ Layer Platform และไม่สามารถเพิ่ม user เป็น Full Control ที่ Layer Platform ได้ เพราะ เป็น Role ของ Layer Service
+* If you give a user the **Admin** role at the **Platform** level, that user will also have Admin access in **Service** and **Component**.
+* If you give a user **Full Control** at the **Service** level, that user will have Full Control in **Component** but will not have management rights at the **Platform** level.
 
-จากตัวอย่างจะพบว่ายิ่งให้ Role กับ user ที่ Layer ที่อยู่สูงกว่าจะยิ่งมีสิทธิ์การจัดการที่มากขึ้น และใช้ devops tool ได้มากขึ้น
+**Why is this important?**
 
-**การเพิ่ม user ที่ layer ใดจึงควรคำนึงถึงสิทธิ์การเข้าถึงของ user เป็นเรื่องสำคัญ**
+Understanding roles and permission inheritance helps you manage system access correctly and securely, ensuring everyone has the necessary permissions to do their job.
